@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>レース分析器 — レース個別ビュー</title>
+<style>
+  :root{
+    --bg:#FBFAF7; --panel:#fff; --panel2:#F2EFE8; --ink:#1A1D1E; --muted:#5A6165;
+    --line:#E2DFD8; --accent:#0E7C7B;
+    --model:#2a78d6; --market:#eb6834;
+    --g1:#FBF1D6; --g2:#F3F6EC; --g3:#EFF3F7;   /* 1/2/3着の淡い地色 */
+    --good:#0ca30c; --crit:#d03b3b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.6;
+    font-family:system-ui,-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:22px 20px 80px}
+  h1{font-size:21px;margin:0 0 2px}
+  .sub{font-size:13px;color:var(--muted);margin-bottom:16px}
+  a.nav{color:var(--accent);font-size:12.5px;text-decoration:none}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+  select{font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-family:inherit;max-width:100%}
+  .rhead{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:13px 16px;margin-bottom:12px}
+  .rhead .t{font-size:16px;font-weight:650}
+  .rhead .m{font-size:12.5px;color:var(--muted);margin-top:3px}
+  .rhead .pay{font-size:12.5px;margin-top:6px}
+  .legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin:0 0 8px;flex-wrap:wrap}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px;border:1px solid var(--line)}
+  .toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:12.5px}
+  table{border-collapse:collapse;width:100%;font-size:12.5px;font-variant-numeric:tabular-nums;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{padding:7px 9px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+  th:nth-child(3),td:nth-child(3),th:nth-child(4),td:nth-child(4){text-align:left}
+  th{color:var(--muted);font-weight:600;font-size:11px;background:var(--panel2);cursor:default}
+  .sep{border-left:2px solid var(--line)}
+  .fin1{background:var(--g1)} .fin2{background:var(--g2)} .fin3{background:var(--g3)}
+  .honmei{font-weight:700;color:var(--model)}
+  .badge{display:inline-block;font-size:10px;background:var(--model);color:#fff;border-radius:4px;padding:0 5px;margin-left:4px}
+  .scratch{color:var(--muted);text-decoration:line-through}
+  .muted{color:var(--muted)}
+  .hint{font-size:11px;color:var(--muted);margin-top:8px}
+  .big{font-size:14px;font-weight:650}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="display:flex;justify-content:space-between;align-items:baseline">
+    <h1>レース個別ビュー</h1>
+    <a class="nav" href="dashboard.html">← 勝率ダッシュボードへ</a>
+  </div>
+  <div class="sub">レースを選ぶと、アプリ（pfモデル）の順位・数値と、実際の結果を並べて確認できます。</div>
+
+  <div class="controls">
+    <label>日付 <select id="dsel"></select></label>
+    <label>レース <select id="rsel"></select></label>
+    <label style="font-size:12.5px;color:var(--muted)"><input type="checkbox" id="byfin"> 着順で並べ替え</label>
+  </div>
+
+  <div id="out"></div>
+  <div class="hint">※ このページのURLはレースごとに変わります。ブックマークすれば後からそのレースを直接開けます。</div>
+</div>
+
+<script>
+const pct=v=>v==null?'—':(v*100).toFixed(1)+'%';
+const ymd=d=>d.replace(/-/g,'');
+const cache={pred:{},res:{}};
+let INDEX=null;
+
+async function getJSON(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(r.status);return r.json();}
+async function pred(date){if(!cache.pred[date])cache.pred[date]=await getJSON(`data/predictions/${ymd(date)}.json`).catch(()=>null);return cache.pred[date];}
+async function res(date){if(!(date in cache.res))cache.res[date]=await getJSON(`data/results/${ymd(date)}.json`).catch(()=>null);return cache.res[date];}
+
+function opt(v,t){const o=document.createElement('option');o.value=v;o.textContent=t;return o;}
+
+function fillDates(){
+  const d=document.getElementById('dsel');d.innerHTML='';
+  INDEX.days.forEach(day=>d.appendChild(opt(day.date,`${day.date}（${day.num_races}R）`)));
+}
+function fillRaces(date){
+  const day=INDEX.days.find(x=>x.date===date);const r=document.getElementById('rsel');r.innerHTML='';
+  if(!day)return;
+  day.races.forEach(rc=>r.appendChild(opt(rc.rkey, rc.label + (rc.has_result?'':'（結果待ち）'))));
+}
+
+function fmtOdds(v){return v==null?'—':v.toFixed(1);}
+function payYen(p){return p==null?'—':p.toLocaleString()+'円';}
+
+async function render(){
+  const date=document.getElementById('dsel').value;
+  const rkey=document.getElementById('rsel').value;
+  const byfin=document.getElementById('byfin').checked;
+  history.replaceState(null,'',`?d=${date}&r=${rkey}`);
+  const out=document.getElementById('out');
+  const [P,R]=await Promise.all([pred(date),res(date)]);
+  if(!P){out.innerHTML='<div class="rhead">予想データが見つかりません。</div>';return;}
+  const pr=P.races.find(x=>String(x.rkey)===String(rkey));
+  if(!pr){out.innerHTML='<div class="rhead">レースが見つかりません。</div>';return;}
+  const rr=R?R.races.find(x=>String(x.rkey)===String(rkey)):null;
+  const rh={}; if(rr){rr.horses.forEach(h=>rh[h.umaban]=h);}
+
+  // 行データを結合
+  let rows=pr.horses.map(h=>{
+    const r=rh[h.umaban]||{};
+    return {...h, finish:r.finish??null, win_odds:r.win_odds??null, popularity:r.popularity??null, scratched:r.scratched||false};
+  });
+  rows.sort((a,b)=> byfin
+    ? ((a.finish??99)-(b.finish??99))
+    : ((a.pf_rank??99)-(b.pf_rank??99)));
+
+  // ヘッダ
+  const podium = rr ? rr.horses.filter(h=>[1,2,3].includes(h.finish)).sort((a,b)=>a.finish-b.finish) : [];
+  const nrun = rr? rr.num_runners : pr.horses.length;
+  let payHtml='';
+  if(rr && rr.sanrenpuku && rr.sanrenpuku.length){
+    payHtml = rr.sanrenpuku.map(s=>`三連複 ${s.kumi.join('-')} <b>${payYen(s.pay)}</b>`).join(' ／ ');
+  }
+  const podHtml = podium.length? podium.map(h=>`${h.finish}着 ${h.umaban} ${h.bamei||''}`).join(' → ') : '結果待ち';
+  out.querySelector && 0;
+  let html = `<div class="rhead">
+    <div class="t">${(pr.jyo_name||'')}${pr.race_num||''}R <span class="muted" style="font-weight:400">${pr.segment||''}・${nrun}頭</span></div>
+    <div class="m">${date}　rkey ${pr.rkey}　${P.model_name?('model: '+P.model_name):''}</div>
+    <div class="pay"><span class="muted">結果:</span> ${podHtml}${payHtml?`　<span class="muted">|</span> ${payHtml}`:''}</div>
+  </div>`;
+
+  html += `<div class="legend">
+    <span><i style="background:var(--g1)"></i>1着</span><span><i style="background:var(--g2)"></i>2着</span><span><i style="background:var(--g3)"></i>3着</span>
+    <span class="honmei" style="color:var(--model)">■ pf本命(1位)</span>
+    <span class="muted">左＝アプリの数値／右＝実際の結果</span>
+  </div>`;
+
+  html += `<table><thead><tr>
+    <th>pf順</th><th>pfスコア</th><th>馬番</th><th>馬名</th><th>騎手</th>
+    <th>市場人気</th><th>市場勝率</th><th>乖離</th>
+    <th class="sep">着順</th><th>確定オッズ</th><th>確定人気</th>
+  </tr></thead><tbody>`;
+  rows.forEach(h=>{
+    const finCls = h.finish===1?'fin1':h.finish===2?'fin2':h.finish===3?'fin3':'';
+    const nameCls = h.scratched?'scratch':'';
+    const honmei = h.pf_rank===1;
+    const div = h.divergence;
+    const divTxt = div==null?'—':(div>0?`+${div}`:`${div}`);
+    html+=`<tr class="${finCls}">
+      <td class="${honmei?'honmei':''}">${h.pf_rank??'—'}${honmei?'<span class="badge">本命</span>':''}</td>
+      <td>${h.pf_score!=null?h.pf_score.toFixed(4):'—'}</td>
+      <td>${h.umaban}</td>
+      <td class="${nameCls}">${h.bamei||''}</td>
+      <td class="muted">${h.kisyu||''}</td>
+      <td>${h.market_rank??'—'}</td>
+      <td>${h.market_q!=null?(h.market_q*100).toFixed(1)+'%':'—'}</td>
+      <td class="${div>0?'':(div<0?'muted':'')}">${divTxt}</td>
+      <td class="sep ${h.finish?'big':''}">${h.scratched?'取消':(h.finish??'—')}</td>
+      <td>${fmtOdds(h.win_odds)}</td>
+      <td class="muted">${h.popularity??'—'}</td>
+    </tr>`;
+  });
+  html+='</tbody></table>';
+  html+=`<div class="hint">乖離＝市場人気順位 − pf順位（正＝モデルが市場より高評価）。着順の地色は1〜3着。</div>`;
+  out.innerHTML=html;
+}
+
+function selectFromQuery(){
+  const q=new URLSearchParams(location.search);
+  const d=q.get('d'), r=q.get('r');
+  if(d && INDEX.days.some(x=>x.date===d)){document.getElementById('dsel').value=d;}
+  fillRaces(document.getElementById('dsel').value);
+  if(r){const rs=document.getElementById('rsel');if([...rs.options].some(o=>o.value===r))rs.value=r;}
+}
+
+async function init(){
+  try{INDEX=await getJSON('data/index.json');}
+  catch(e){document.getElementById('out').innerHTML='<div class="rhead">index.json を読み込めませんでした（'+e.message+'）。集計を一度実行すると生成されます。</div>';return;}
+  if(!INDEX.days.length){document.getElementById('out').innerHTML='<div class="rhead">まだデータがありません。</div>';return;}
+  fillDates();
+  selectFromQuery();
+  document.getElementById('dsel').addEventListener('change',()=>{fillRaces(document.getElementById('dsel').value);render();});
+  document.getElementById('rsel').addEventListener('change',render);
+  document.getElementById('byfin').addEventListener('change',render);
+  render();
+}
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+{
+  "days": [
+    {
+      "date": "2026-07-19",
+      "num_races": 35,
+      "races": [
+        {
+          "rkey": "202602011201",
+          "jyo_name": "函館",
+          "race_num": 1,
+          "segment": "turf1200",
+          "label": "函館1R turf1200",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011202",
+          "jyo_name": "函館",
+          "race_num": 2,
+          "segment": "dirt800",
+          "label": "函館2R dirt800",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011203",
+          "jyo_name": "函館",
+          "race_num": 3,
+          "segment": "dirt1600",
+          "label": "函館3R dirt1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011204",
+          "jyo_name": "函館",
+          "race_num": 4,
+          "segment": "turf2000",
+          "label": "函館4R turf2000",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011205",
+          "jyo_name": "函館",
+          "race_num": 5,
+          "segment": "turf1600",
+          "label": "函館5R turf1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011206",
+          "jyo_name": "函館",
+          "race_num": 6,
+          "segment": "turf1200",
+          "label": "函館6R turf1200",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011207",
+          "jyo_name": "函館",
+          "race_num": 7,
+          "segment": "dirt1600",
+          "label": "函館7R dirt1600",
+          "has_result": false
+        },
+        {
+          "rkey": "202602011208",
+          "jyo_name": "函館",
+          "race_num": 8,
+          "segment": "dirt800",
+          "label": "函館8R dirt800",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011209",
+          "jyo_name": "函館",
+          "race_num": 9,
+          "segment": "turf1600",
+          "label": "函館9R turf1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011210",
+          "jyo_name": "函館",
+          "race_num": 10,
+          "segment": "dirt1600",
+          "label": "函館10R dirt1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011211",
+          "jyo_name": "函館",
+          "race_num": 11,
+          "segment": "turf1200",
+          "label": "函館11R turf1200",
+          "has_result": true
+        },
+        {
+          "rkey": "202602011212",
+          "jyo_name": "函館",
+          "race_num": 12,
+          "segment": "turf1200",
+          "label": "函館12R turf1200",
+          "has_result": false
+        },
+        {
+          "rkey": "202610020802",
+          "jyo_name": "小倉",
+          "race_num": 2,
+          "segment": "turf1200",
+          "label": "小倉2R turf1200",
+          "has_result": true
+        },
+        {
+          "rkey": "202610020803",
+          "jyo_name": "小倉",
+          "race_num": 3,
+          "segment": "dirt1600",
+          "label": "小倉3R dirt1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202610020804",
+          "jyo_name": "小倉",
+          "race_num": 4,
+          "segment": "turf2000",
+          "label": "小倉4R turf2000",
+          "has_result": true
+        },
+        {
+          "rkey": "202610020805",
+          "jyo_name": "小倉",
+          "race_num": 5,
+          "segment": "turf1600",
+          "label": "小倉5R turf1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202610020806",
+          "jyo_name": "小倉",
+          "race_num": 6,
+          "segment": "dirt1600",
+          "label": "小倉6R dirt1600",
+          "has_result": false
+        },
+        {
+          "rkey": "202610020807",
+          "jyo_name": "小倉",
+          "race_num": 7,
+          "segment": "turf1200",
+          "label": "小倉7R turf1200",
+          "has_result": false
+        },
+        {
+          "rkey": "202610020808",
+          "jyo_name": "小倉",
+          "race_num": 8,
+          "segment": "dirt800",
+          "label": "小倉8R dirt800",
+          "has_result": true
+        },
+        {
+          "rkey": "202610020809",
+          "jyo_name": "小倉",
+          "race_num": 9,
+          "segment": "turf1600",
+          "label": "小倉9R turf1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202610020810",
+          "jyo_name": "小倉",
+          "race_num": 10,
+          "segment": "dirt1600",
+          "label": "小倉10R dirt1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202610020811",
+          "jyo_name": "小倉",
+          "race_num": 11,
+          "segment": "turf2000",
+          "label": "小倉11R turf2000",
+          "has_result": true
+        },
+        {
+          "rkey": "202610020812",
+          "jyo_name": "小倉",
+          "race_num": 12,
+          "segment": "turf1600",
+          "label": "小倉12R turf1600",
+          "has_result": false
+        },
+        {
+          "rkey": "202603020801",
+          "jyo_name": "福島",
+          "race_num": 1,
+          "segment": "dirt800",
+          "label": "福島1R dirt800",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020802",
+          "jyo_name": "福島",
+          "race_num": 2,
+          "segment": "turf2000",
+          "label": "福島2R turf2000",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020803",
+          "jyo_name": "福島",
+          "race_num": 3,
+          "segment": "turf1600",
+          "label": "福島3R turf1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020804",
+          "jyo_name": "福島",
+          "race_num": 4,
+          "segment": "dirt1600",
+          "label": "福島4R dirt1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020805",
+          "jyo_name": "福島",
+          "race_num": 5,
+          "segment": "turf2000",
+          "label": "福島5R turf2000",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020806",
+          "jyo_name": "福島",
+          "race_num": 6,
+          "segment": "turf1200",
+          "label": "福島6R turf1200",
+          "has_result": false
+        },
+        {
+          "rkey": "202603020807",
+          "jyo_name": "福島",
+          "race_num": 7,
+          "segment": "dirt1600",
+          "label": "福島7R dirt1600",
+          "has_result": false
+        },
+        {
+          "rkey": "202603020808",
+          "jyo_name": "福島",
+          "race_num": 8,
+          "segment": "turf1600",
+          "label": "福島8R turf1600",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020809",
+          "jyo_name": "福島",
+          "race_num": 9,
+          "segment": "turf1200",
+          "label": "福島9R turf1200",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020810",
+          "jyo_name": "福島",
+          "race_num": 10,
+          "segment": "turf2000",
+          "label": "福島10R turf2000",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020811",
+          "jyo_name": "福島",
+          "race_num": 11,
+          "segment": "dirt800",
+          "label": "福島11R dirt800",
+          "has_result": true
+        },
+        {
+          "rkey": "202603020812",
+          "jyo_name": "福島",
+          "race_num": 12,
+          "segment": "dirt1600",
+          "label": "福島12R dirt1600",
+          "has_result": false
+        }
+      ]
+    }
+  ]
+}

@@ -441,6 +441,34 @@ def timeseries(all_races):
             for k, v in sorted(by_date.items())]
 
 
+def build_index(preds, results):
+    """レース個別ビュー用の一覧 index.json を作る（日付×レース）。"""
+    days = []
+    for date in sorted(preds.keys(), reverse=True):
+        pred = preds[date]
+        res = results.get(date)
+        res_rkeys = set(str(r["rkey"]) for r in res["races"]) if res else set()
+        # 着順が実際に入っているレース（finishあり）
+        finished_rkeys = set()
+        if res:
+            for r in res["races"]:
+                if any(h.get("finish") for h in r.get("horses", [])):
+                    finished_rkeys.add(str(r["rkey"]))
+        races = []
+        for r in pred["races"]:
+            rk = str(r["rkey"])
+            label = ("%s%sR %s" % (r.get("jyo_name") or "", r.get("race_num") or "",
+                                   r.get("segment") or "")).strip()
+            races.append({
+                "rkey": rk, "jyo_name": r.get("jyo_name"), "race_num": r.get("race_num"),
+                "segment": r.get("segment"), "label": label,
+                "has_result": rk in finished_rkeys,
+            })
+        races.sort(key=lambda x: (x["jyo_name"] or "", x["race_num"] or 0))
+        days.append({"date": date, "num_races": len(races), "races": races})
+    return {"days": days}
+
+
 def main(argv=None):
     here = os.path.dirname(__file__)
     ap = argparse.ArgumentParser(description="予想×実績を集計しmetrics.jsonを出力")
@@ -453,6 +481,12 @@ def main(argv=None):
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(metrics, f, ensure_ascii=False, indent=2)
+
+    # レース個別ビュー用の一覧
+    index = build_index(load_json_dir(args.pred), load_json_dir(args.res))
+    idx_path = os.path.join(os.path.dirname(args.out), "index.json")
+    with open(idx_path, "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False, indent=2)
     ds = metrics["data_status"]
     print(f"OK: days={ds['days']} races={ds['num_races_total']} with_result={ds['num_races_with_result']} demo={ds['results_are_demo']}")
     print(f"    -> {os.path.abspath(args.out)}")
