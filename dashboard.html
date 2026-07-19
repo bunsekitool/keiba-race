@@ -66,7 +66,7 @@
   <div class="sub" style="margin-top:-6px">本命＝各レースで pf_rank が1位の馬（取消・除外は除く）。</div>
   <div id="a1tiles" class="tiles"></div>
   <div class="card" style="margin-top:12px">
-    <div style="font-size:13px;color:var(--muted);margin-bottom:9px">三連複ボックス — pf上位N頭を買ったとき、実際の1〜3着がその中に全部収まった割合</div>
+    <div style="font-size:13px;color:var(--muted);margin-bottom:9px">三連複ボックス — 上位N頭を三連複ボックスで買ったときの的中率・回収率。<b>pf（モデル）</b>と<b>市場人気（基準値）</b>を並べて比較</div>
     <div id="trifecta"></div>
   </div>
 
@@ -152,19 +152,26 @@ function render(m){
     + tile('本命の平均人気', a1.honmei_avg_market_rank==null?'—':a1.honmei_avg_market_rank.toFixed(2),'低いほど人気馬寄り')
     + tile('pf上位3の複勝圏率', pct(a1.top3_any_place_rate),'3頭中1頭でも圏内');
 
-  // 三連複ボックス（的中率＋回収率）
+  // 三連複ボックス（pf vs 市場基準・的中率＋回収率）
   const tb=m.trifecta_box;
   if(tb&&tb.by_topN){
-    const rows=tb.by_topN.map(row=>{
-      const roi=row.roi;
-      const roiTxt=roi==null?'—':(roi*100).toFixed(0)+'%';
-      const roiCls=roi==null?'muted':(roi>=1?'roi-hi':'roi-lo');
-      return `<tr><td>pf上位${row.topN}頭</td><td>${row.points}点 (${row.cost_per_race}円)</td>`
-        +`<td>${pct(row.hit_rate)}</td><td class="${roiCls}">${roiTxt}</td>`
-        +`<td class="muted">${row.n_races}</td></tr>`;
-    }).join('');
+    const roiCell=o=>{
+      const roi=o&&o.roi; const t=roi==null?'—':(roi*100).toFixed(0)+'%';
+      const c=roi==null?'muted':(roi>=1?'roi-hi':'roi-lo');
+      return `<td class="${c}">${t}</td>`;
+    };
+    const rows=tb.by_topN.map(row=>
+      `<tr><td>上位${row.topN}頭</td><td>${row.points}点(${row.cost_per_race}円)</td>`
+      +`<td>${pct(row.pf.hit_rate)}</td>`+roiCell(row.pf)
+      +`<td class="muted">${pct(row.market.hit_rate)}</td>`+roiCell(row.market)
+      +`</tr>`).join('');
     document.getElementById('trifecta').innerHTML =
-      `<table><thead><tr><th>買い方</th><th>点数(1点100円)</th><th>的中率</th><th>回収率</th><th>対象R</th></tr></thead><tbody>${rows}</tbody></table>`
+      `<table><thead>`
+      +`<tr><th rowspan="2">買い方</th><th rowspan="2">点数</th>`
+      +`<th colspan="2" style="text-align:center;border-bottom:1px solid var(--line)">pf（モデル）</th>`
+      +`<th colspan="2" style="text-align:center;border-bottom:1px solid var(--line)">市場人気（基準）</th></tr>`
+      +`<tr><th>的中率</th><th>回収率</th><th>的中率</th><th>回収率</th></tr>`
+      +`</thead><tbody>${rows}</tbody></table>`
       + `<div class="muted" style="font-size:11px;margin-top:7px">${tb.note}</div>`;
   }
 

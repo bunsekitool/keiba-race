@@ -204,50 +204,52 @@ def axis1_honmei(races):
     }
 
 
-def trifecta_box(races, ns=(3, 4, 5), unit=100):
-    """
-    pf上位N頭を三連複ボックス(C(N,3)点)で買ったときの的中率と回収率。
-    的中＝実際の1〜3着が全て pf_rank<=N。回収率は N_HARAI の三連複払戻(100円あたり)を使用。
-    - 分母（的中率）: 3頭以上着順確定 & 出走頭数>N のレース。
-    - 回収率: 上記のうち三連複払戻データがあるレースで、
-        コスト = C(N,3)*unit（毎レース）, 払戻 = 当たり組番が pf上位N頭に収まる場合のPay合計。
-    - box は pf_rank<=N の「出走馬」で構成（取消は除外）。
-    """
+def _box_stats(races, rank_key, ns, unit):
+    """rank_key(=pf_rank または market_rank)上位N頭の三連複ボックスの的中率・回収率。"""
     hit = {n: 0 for n in ns}
     denom = {n: 0 for n in ns}
-    ret = {n: 0 for n in ns}      # 払戻合計(円)
-    cost = {n: 0 for n in ns}     # 購入合計(円)
-    nroi = {n: 0 for n in ns}     # 回収率の対象レース数
+    ret = {n: 0 for n in ns}
+    cost = {n: 0 for n in ns}
+    nroi = {n: 0 for n in ns}
     for r in races:
-        fin = [h for h in r["horses"] if finished(h) and h.get("pf_rank") is not None]
+        fin = [h for h in r["horses"] if finished(h) and h.get(rank_key) is not None]
         podium = [h for h in fin if h.get("finish") in (1, 2, 3)]
         if len(podium) < 3:
             continue
         nr = r.get("num_runners") or len(fin)
         payoffs = r.get("sanrenpuku") or []
         for n in ns:
-            if nr <= n:            # 頭数<=Nはボックス=全頭で自明的中のため除外
+            if nr <= n:
                 continue
             denom[n] += 1
-            if all(h["pf_rank"] <= n for h in podium):
+            if all(h[rank_key] <= n for h in podium):
                 hit[n] += 1
-            # --- 回収率（払戻データがある場合のみ）---
             if payoffs:
-                box = set(h["umaban"] for h in fin if h["pf_rank"] <= n)
+                box = set(h["umaban"] for h in fin if h[rank_key] <= n)
                 cost[n] += comb(n, 3) * unit
                 nroi[n] += 1
                 for po in payoffs:
                     if set(po["kumi"]).issubset(box):
-                        ret[n] += po["pay"]        # Pay は100円あたり=unit前提
+                        ret[n] += po["pay"]
+    return {n: {"n_races": denom[n], "hit_rate": rate(hit[n], denom[n]),
+                "roi": rate(ret[n], cost[n]), "n_roi_races": nroi[n]} for n in ns}
+
+
+def trifecta_box(races, ns=(3, 4, 5), unit=100):
+    """
+    上位N頭を三連複ボックス(C(N,3)点)で買ったときの的中率・回収率。
+    pf（モデル順位）と market（市場人気順位）の両方を出し、市場を基準値として比較する。
+    回収率は N_HARAI の三連複払戻(100円あたり)。頭数>N のレースのみ集計。
+    """
+    pf = _box_stats(races, "pf_rank", ns, unit)
+    mk = _box_stats(races, "market_rank", ns, unit)
     return {
         "unit": unit,
         "by_topN": [{
-            "topN": n, "points": comb(n, 3),
-            "n_races": denom[n], "hit_rate": rate(hit[n], denom[n]),
-            "roi": rate(ret[n], cost[n]), "n_roi_races": nroi[n],
-            "cost_per_race": comb(n, 3) * unit,
+            "topN": n, "points": comb(n, 3), "cost_per_race": comb(n, 3) * unit,
+            "pf": pf[n], "market": mk[n],
         } for n in ns],
-        "note": "的中=1〜3着がpf上位N頭に全収まり。回収率=三連複払戻(N_HARAI)/購入額。頭数>Nのレースのみ。",
+        "note": "的中=1〜3着が上位N頭に全収まり。回収率=三連複払戻/購入額。market=人気上位N頭(基準値)。頭数>Nのみ。",
     }
 
 

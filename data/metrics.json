@@ -28,32 +28,56 @@
       {
         "topN": 3,
         "points": 1,
-        "n_races": 27,
-        "hit_rate": 0.037037037037037035,
-        "roi": 0.24074074074074073,
-        "n_roi_races": 27,
-        "cost_per_race": 100
+        "cost_per_race": 100,
+        "pf": {
+          "n_races": 27,
+          "hit_rate": 0.037037037037037035,
+          "roi": 0.24074074074074073,
+          "n_roi_races": 27
+        },
+        "market": {
+          "n_races": 27,
+          "hit_rate": 0.1111111111111111,
+          "roi": 0.762962962962963,
+          "n_roi_races": 27
+        }
       },
       {
         "topN": 4,
         "points": 4,
-        "n_races": 27,
-        "hit_rate": 0.18518518518518517,
-        "roi": 0.5842592592592593,
-        "n_roi_races": 27,
-        "cost_per_race": 400
+        "cost_per_race": 400,
+        "pf": {
+          "n_races": 27,
+          "hit_rate": 0.18518518518518517,
+          "roi": 0.5842592592592593,
+          "n_roi_races": 27
+        },
+        "market": {
+          "n_races": 27,
+          "hit_rate": 0.2962962962962963,
+          "roi": 1.0592592592592593,
+          "n_roi_races": 27
+        }
       },
       {
         "topN": 5,
         "points": 10,
-        "n_races": 26,
-        "hit_rate": 0.3076923076923077,
-        "roi": 0.4380769230769231,
-        "n_roi_races": 26,
-        "cost_per_race": 1000
+        "cost_per_race": 1000,
+        "pf": {
+          "n_races": 26,
+          "hit_rate": 0.3076923076923077,
+          "roi": 0.4380769230769231,
+          "n_roi_races": 26
+        },
+        "market": {
+          "n_races": 26,
+          "hit_rate": 0.5,
+          "roi": 1.0553846153846154,
+          "n_roi_races": 26
+        }
       }
     ],
-    "note": "的中=1〜3着がpf上位N頭に全収まり。回収率=三連複払戻(N_HARAI)/購入額。頭数>Nのレースのみ。"
+    "note": "的中=1〜3着が上位N頭に全収まり。回収率=三連複払戻/購入額。market=人気上位N頭(基準値)。頭数>Nのみ。"
   },
   "axis2_vs_market": {
     "mean_rho_model": 0.3886475607399606,
