@@ -102,6 +102,11 @@
   <h2><span class="ax">傾向</span>セグメント別 本命成績</h2>
   <div class="card"><div id="seg"></div></div>
 
+  <!-- セグメント別 三連複 pf vs 市場 -->
+  <h2><span class="ax">傾向</span>セグメント別 三連複（pf vs 市場・上位5頭ボックス）</h2>
+  <div class="sub" style="margin-top:-6px">「差(回収)」＝pf回収率−市場回収率。プラスなら、その条件でモデルが市場を上回っています。</div>
+  <div class="card"><div id="trifecta_seg"></div></div>
+
   <!-- 時系列 -->
   <h2><span class="ax">推移</span>日次 本命的中率</h2>
   <div class="card"><div id="ts"></div></div>
@@ -231,6 +236,30 @@ function render(m){
     `<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">`
     + `<div>${segTable('セグメント別（芝ダ×距離）', seg.by_segment)}</div>`
     + `<div>${segTable('競馬場別', seg.by_jyo)}</div></div>`;
+
+  // セグメント別 三連複 pf vs 市場
+  const ts5=m.trifecta_segment;
+  if(ts5){
+    const roiTxt=v=>v==null?'—':(v*100).toFixed(0)+'%';
+    const tseg=(title,arr)=>{
+      const rows=(arr||[]).map(x=>{
+        const e=x.roi_edge;
+        const eTxt=e==null?'—':((e>=0?'+':'')+(e*100).toFixed(0)+'pt');
+        const eCls=e==null?'muted':(e>=0?'roi-hi':'roi-lo');
+        return `<tr><td>${x.key||'—'}</td><td class="muted">${x.n_races}</td>`
+          +`<td>${pct(x.pf.hit_rate)}</td><td>${roiTxt(x.pf.roi)}</td>`
+          +`<td class="muted">${pct(x.market.hit_rate)}</td><td class="muted">${roiTxt(x.market.roi)}</td>`
+          +`<td class="${eCls}">${eTxt}</td></tr>`;
+      }).join('');
+      return `<div style="font-size:12px;color:var(--muted);margin:2px 0 4px">${title}</div>`
+        +`<table><thead><tr><th>区分</th><th>R</th><th>pf的中</th><th>pf回収</th><th>市場的中</th><th>市場回収</th><th>差(回収)</th></tr></thead><tbody>${rows}</tbody></table>`;
+    };
+    document.getElementById('trifecta_seg').innerHTML =
+      tseg('セグメント別（芝ダ×距離）', ts5.by_segment)
+      + `<div style="height:16px"></div>`
+      + tseg('競馬場別', ts5.by_jyo)
+      + `<div class="muted" style="font-size:11px;margin-top:7px">${ts5.note}</div>`;
+  }
 
   // 時系列
   const ts=m.timeseries||[];

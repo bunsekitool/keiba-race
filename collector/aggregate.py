@@ -151,6 +151,7 @@ def aggregate(pred_glob, res_glob):
         },
         "axis1_honmei": axis1_honmei(races_with_result),
         "trifecta_box": trifecta_box(races_with_result),
+        "trifecta_segment": trifecta_segment(races_with_result),
         "axis2_vs_market": axis2_vs_market(races_with_result, all_races),
         "axis3_edge": axis3_edge(races_with_result),
         "axis4_calibration": axis4_calibration(races_with_result),
@@ -250,6 +251,32 @@ def trifecta_box(races, ns=(3, 4, 5), unit=100):
             "pf": pf[n], "market": mk[n],
         } for n in ns],
         "note": "的中=1〜3着が上位N頭に全収まり。回収率=三連複払戻/購入額。market=人気上位N頭(基準値)。頭数>Nのみ。",
+    }
+
+
+def trifecta_segment(races, n=5, unit=100, keys=("segment", "jyo_name")):
+    """
+    セグメント別・競馬場別に、上位N頭三連複ボックスの pf と 市場基準 を比較。
+    roi_edge = pf回収率 − 市場回収率（正なら、その条件でモデルが市場を上回る）。
+    """
+    out = {}
+    for key in keys:
+        groups = defaultdict(list)
+        for r in races:
+            groups[r.get(key)].append(r)
+        rows = []
+        for g, rs in groups.items():
+            pf = _box_stats(rs, "pf_rank", (n,), unit)[n]
+            mk = _box_stats(rs, "market_rank", (n,), unit)[n]
+            edge = (pf["roi"] - mk["roi"]) if (pf["roi"] is not None and mk["roi"] is not None) else None
+            rows.append({"key": g, "n_races": pf["n_races"], "pf": pf, "market": mk, "roi_edge": edge})
+        rows.sort(key=lambda x: -(x["n_races"] or 0))
+        out[key] = rows
+    return {
+        "topN": n, "points": comb(n, 3),
+        "by_segment": out.get("segment", []),
+        "by_jyo": out.get("jyo_name", []),
+        "note": "上位%d頭三連複ボックス。差=pf回収率−市場回収率(正=モデルが市場超え)。少頭数レースは除外。" % n,
     }
 
 

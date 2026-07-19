@@ -79,6 +79,151 @@
     ],
     "note": "的中=1〜3着が上位N頭に全収まり。回収率=三連複払戻/購入額。market=人気上位N頭(基準値)。頭数>Nのみ。"
   },
+  "trifecta_segment": {
+    "topN": 5,
+    "points": 10,
+    "by_segment": [
+      {
+        "key": "turf1600",
+        "n_races": 6,
+        "pf": {
+          "n_races": 6,
+          "hit_rate": 0.0,
+          "roi": 0.0,
+          "n_roi_races": 6
+        },
+        "market": {
+          "n_races": 6,
+          "hit_rate": 0.5,
+          "roi": 1.1083333333333334,
+          "n_roi_races": 6
+        },
+        "roi_edge": -1.1083333333333334
+      },
+      {
+        "key": "turf1200",
+        "n_races": 5,
+        "pf": {
+          "n_races": 5,
+          "hit_rate": 0.2,
+          "roi": 0.378,
+          "n_roi_races": 5
+        },
+        "market": {
+          "n_races": 5,
+          "hit_rate": 0.4,
+          "roi": 1.004,
+          "n_roi_races": 5
+        },
+        "roi_edge": -0.626
+      },
+      {
+        "key": "dirt800",
+        "n_races": 5,
+        "pf": {
+          "n_races": 5,
+          "hit_rate": 0.2,
+          "roi": 0.168,
+          "n_roi_races": 5
+        },
+        "market": {
+          "n_races": 5,
+          "hit_rate": 0.4,
+          "roi": 0.888,
+          "n_roi_races": 5
+        },
+        "roi_edge": -0.72
+      },
+      {
+        "key": "dirt1600",
+        "n_races": 5,
+        "pf": {
+          "n_races": 5,
+          "hit_rate": 0.6,
+          "roi": 1.31,
+          "n_roi_races": 5
+        },
+        "market": {
+          "n_races": 5,
+          "hit_rate": 0.6,
+          "roi": 1.844,
+          "n_roi_races": 5
+        },
+        "roi_edge": -0.534
+      },
+      {
+        "key": "turf2000",
+        "n_races": 5,
+        "pf": {
+          "n_races": 5,
+          "hit_rate": 0.6,
+          "roi": 0.422,
+          "n_roi_races": 5
+        },
+        "market": {
+          "n_races": 5,
+          "hit_rate": 0.6,
+          "roi": 0.422,
+          "n_roi_races": 5
+        },
+        "roi_edge": 0.0
+      }
+    ],
+    "by_jyo": [
+      {
+        "key": "函館",
+        "n_races": 10,
+        "pf": {
+          "n_races": 10,
+          "hit_rate": 0.3,
+          "roi": 0.521,
+          "n_roi_races": 10
+        },
+        "market": {
+          "n_races": 10,
+          "hit_rate": 0.5,
+          "roi": 1.073,
+          "n_roi_races": 10
+        },
+        "roi_edge": -0.5519999999999999
+      },
+      {
+        "key": "福島",
+        "n_races": 9,
+        "pf": {
+          "n_races": 9,
+          "hit_rate": 0.4444444444444444,
+          "roi": 0.6366666666666667,
+          "n_roi_races": 9
+        },
+        "market": {
+          "n_races": 9,
+          "hit_rate": 0.3333333333333333,
+          "roi": 0.2777777777777778,
+          "n_roi_races": 9
+        },
+        "roi_edge": 0.3588888888888889
+      },
+      {
+        "key": "小倉",
+        "n_races": 7,
+        "pf": {
+          "n_races": 7,
+          "hit_rate": 0.14285714285714285,
+          "roi": 0.06428571428571428,
+          "n_roi_races": 7
+        },
+        "market": {
+          "n_races": 7,
+          "hit_rate": 0.7142857142857143,
+          "roi": 2.03,
+          "n_roi_races": 7
+        },
+        "roi_edge": -1.9657142857142855
+      }
+    ],
+    "note": "上位5頭三連複ボックス。差=pf回収率−市場回収率(正=モデルが市場超え)。少頭数レースは除外。"
+  },
   "axis2_vs_market": {
     "mean_rho_model": 0.3886475607399606,
     "mean_rho_market": 0.4819335359228762,
