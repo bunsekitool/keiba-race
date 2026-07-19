@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>レース分析器 — 勝率管理ダッシュボード</title>
+<style>
+  :root{
+    --bg:#FBFAF7; --panel:#fff; --panel2:#F2EFE8; --ink:#1A1D1E; --muted:#5A6165;
+    --line:#E2DFD8; --accent:#0E7C7B;
+    /* dataviz 検証済みパレット(参照インスタンス) */
+    --series-model:#2a78d6;  /* 青: モデル */
+    --series-market:#eb6834; /* 橙: 市場 */
+    --good:#0ca30c; --warn:#eda100; --crit:#d03b3b;
+    --seq-100:#cde2fb; --seq-250:#86b6ef; --seq-400:#3987e5; --seq-550:#1c5cab; --seq-700:#0d366b;
+    --grid:#e1e0d9; --axis:#c3c2b7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.6;
+    font-family:system-ui,-apple-system,"Segoe UI","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:24px 20px 80px}
+  h1{font-size:22px;margin:0 0 2px}
+  h2{font-size:15px;margin:34px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line);
+     display:flex;align-items:baseline;gap:8px}
+  h2 .ax{font-size:11px;color:#fff;background:var(--accent);border-radius:4px;padding:1px 7px;font-weight:600}
+  .sub{font-size:13px;color:var(--muted);margin-bottom:14px}
+  .banner{border-left:3px solid var(--warn);background:#FBF3DF;padding:9px 13px;font-size:12.5px;
+    border-radius:0 7px 7px 0;margin:14px 0}
+  .banner.ok{border-left-color:var(--accent);background:var(--panel2)}
+  .status{font-size:12px;color:var(--muted);font-family:ui-monospace,Consolas,monospace}
+  /* stat tiles */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+  .tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+  .tile .k{font-size:11.5px;color:var(--muted);margin-bottom:3px}
+  .tile .v{font-size:26px;font-weight:650;letter-spacing:-.5px}
+  .tile .v small{font-size:13px;color:var(--muted);font-weight:400;margin-left:2px}
+  .tile .note{font-size:10.5px;color:var(--muted);margin-top:2px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin-top:12px}
+  .legend{display:flex;gap:16px;font-size:12px;color:var(--muted);margin:2px 0 10px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+  table{border-collapse:collapse;width:100%;font-size:12.5px;font-variant-numeric:tabular-nums}
+  th,td{padding:6px 9px;text-align:right;border-bottom:1px solid var(--line)}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--muted);font-weight:600;font-size:11.5px}
+  .bar-row{display:flex;align-items:center;gap:9px;margin:5px 0;font-size:12.5px}
+  .bar-row .lbl{width:150px;flex:none;color:var(--ink)}
+  .bar-track{flex:1;background:var(--panel2);border-radius:5px;height:16px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:5px}
+  .bar-row .val{width:74px;flex:none;text-align:right;font-variant-numeric:tabular-nums}
+  .roi-hi{color:var(--good);font-weight:600}.roi-lo{color:var(--crit)}
+  .muted{color:var(--muted)}
+  .foot{margin-top:34px;font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+  svg{display:block;max-width:100%}
+  .dot{fill:var(--series-model)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>勝率管理ダッシュボード</h1>
+  <div class="sub">「レース分析器」の予想と実績を突き合わせ、モデルの当たり方と傾向を管理します。</div>
+  <div id="banner"></div>
+  <div id="status" class="status"></div>
+
+  <!-- 軸1 -->
+  <h2><span class="ax">軸1</span>モデル本命の的中率</h2>
+  <div class="sub" style="margin-top:-6px">本命＝各レースで pf_rank が1位の馬（取消・除外は除く）。</div>
+  <div id="a1tiles" class="tiles"></div>
+
+  <!-- 軸2 -->
+  <h2><span class="ax">軸2</span>モデル vs 市場</h2>
+  <div class="card">
+    <div class="legend">
+      <span><i style="background:var(--series-model)"></i>モデル(pf順位)</span>
+      <span><i style="background:var(--series-market)"></i>市場(人気順位)</span>
+      <span class="muted">着順との一致度＝スピアマン順位相関ρ（高いほど的確）</span>
+    </div>
+    <div id="a2bars"></div>
+    <div id="a2split" style="margin-top:12px;font-size:13px"></div>
+  </div>
+
+  <!-- 軸3 -->
+  <h2><span class="ax">軸3</span>妙味（オッズ乖離）</h2>
+  <div class="sub" style="margin-top:-6px">乖離＝市場人気順位 − モデル順位。正の値ほどモデルが市場より高く評価した馬。</div>
+  <div class="card"><div id="a3"></div></div>
+
+  <!-- 軸4 -->
+  <h2><span class="ax">軸4</span>スコア較正</h2>
+  <div class="sub" style="margin-top:-6px">pf_score を5分位に分け、各帯の実測勝率・複勝率を見ます。右肩上がりならスコアが機能。</div>
+  <div class="card">
+    <div class="legend">
+      <span><i style="background:var(--seq-400)"></i>単勝率</span>
+      <span><i style="background:var(--seq-100)"></i>複勝率</span>
+    </div>
+    <div id="a4"></div>
+  </div>
+
+  <!-- セグメント -->
+  <h2><span class="ax">傾向</span>セグメント別 本命成績</h2>
+  <div class="card"><div id="seg"></div></div>
+
+  <!-- 時系列 -->
+  <h2><span class="ax">推移</span>日次 本命的中率</h2>
+  <div class="card"><div id="ts"></div></div>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script>
+const pct = v => v==null ? '—' : (v*100).toFixed(1)+'%';
+const f2  = v => v==null ? '—' : v.toFixed(2);
+const el  = (t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
+
+function tile(k,v,note){
+  return `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div>${note?`<div class="note">${note}</div>`:''}</div>`;
+}
+function barRow(label,val,frac,color,valText){
+  const w=Math.max(0,Math.min(1,frac||0))*100;
+  return `<div class="bar-row"><div class="lbl">${label}</div>
+    <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:${color}"></div></div>
+    <div class="val">${valText!=null?valText:pct(val)}</div></div>`;
+}
+
+function render(m){
+  const ds=m.data_status;
+  // banner
+  const b=document.getElementById('banner');
+  if(ds.num_races_with_result===0){
+    b.className='banner';
+    b.innerHTML='まだ実績（着順）が入っていません。JV-Link で結果を取り込むと、的中率・回収率・βが埋まります。現状は予想と市場データのみ表示。';
+  }else if(ds.results_are_demo){
+    b.className='banner';
+    b.innerHTML='⚠️ <b>デモ実績で表示中</b>（市場勝率から着順を擬似生成）。本番は JV-Link の確定着順・払戻に差し替わります。数値は仕組み確認用です。';
+  }else{
+    b.className='banner ok';
+    b.innerHTML='実測データで表示中。';
+  }
+  document.getElementById('status').textContent =
+    `対象日: ${ds.days.join(', ')} ／ 全${ds.num_races_total}R（実績あり ${ds.num_races_with_result}R）`
+    + (ds.warnings.length?` ／ 突合警告 ${ds.warnings.length}件`:'');
+
+  // 軸1
+  const a1=m.axis1_honmei;
+  document.getElementById('a1tiles').innerHTML =
+    tile('単勝的中率', pct(a1.win_rate), `n=${a1.n_races}R`)
+    + tile('複勝的中率', pct(a1.place_rate))
+    + tile('連対率', pct(a1.rentai_rate))
+    + tile('平均着順', a1.avg_finish==null?'—':a1.avg_finish.toFixed(2))
+    + tile('本命の平均人気', a1.honmei_avg_market_rank==null?'—':a1.honmei_avg_market_rank.toFixed(2),'低いほど人気馬寄り')
+    + tile('pf上位3の複勝圏率', pct(a1.top3_any_place_rate),'3頭中1頭でも圏内');
+
+  // 軸2
+  const a2=m.axis2_vs_market;
+  document.getElementById('a2bars').innerHTML =
+    barRow('ρ モデル', null, (a2.mean_rho_model||0), 'var(--series-model)', f2(a2.mean_rho_model))
+    + barRow('ρ 市場', null, (a2.mean_rho_market||0), 'var(--series-market)', f2(a2.mean_rho_market));
+  const edge=a2.rho_edge;
+  const sp=a2.split_races;
+  const edgeTxt = edge==null?'—':(edge>=0?`+${f2(edge)}（市場超え）`:`${f2(edge)}（市場に劣後）`);
+  const edgeColor = edge==null?'var(--muted)':(edge>=0?'var(--good)':'var(--crit)');
+  document.getElementById('a2split').innerHTML =
+    `<div>ρの差（モデル−市場）：<b style="color:${edgeColor}">${edgeTxt}</b></div>`
+    + `<div style="margin-top:6px">「割れ」レース（本命≠1番人気）：<b>${sp.n}R</b>`
+    + ` ／ そのうち本命が1番人気より上位：<b>${sp.honmei_beats_favorite}R</b>`
+    + `（本命勝ち割合 <b>${pct(sp.honmei_win_share)}</b>）</div>`;
+
+  // 軸3
+  const a3=m.axis3_edge;
+  const order=['model_high(+2以上)','model_high(+1)','neutral(0)','market_high(-1以下)'];
+  const seqCols={'model_high(+2以上)':'var(--seq-700)','model_high(+1)':'var(--seq-550)','neutral(0)':'var(--seq-400)','market_high(-1以下)':'var(--seq-250)'};
+  const jp={'model_high(+2以上)':'モデル高評価 +2以上','model_high(+1)':'モデル高評価 +1','neutral(0)':'中立 0','market_high(-1以下)':'市場高評価 −1以下'};
+  let anyApprox=false;
+  let rows=order.map(k=>{const v=a3[k]||{};if(v.roi_uses_confirmed_odds===false)anyApprox=true;
+    const roi=v.tansho_roi;const roiCls=roi==null?'':(roi>=1?'roi-hi':'roi-lo');
+    return `<tr><td>${jp[k]}</td><td>${v.n_horses||0}</td><td>${pct(v.win_rate)}</td><td>${pct(v.place_rate)}</td>
+      <td class="${roiCls}">${roi==null?'—':(roi*100).toFixed(0)+'%'}</td></tr>`;}).join('');
+  let bars=order.map(k=>{const v=a3[k]||{};return barRow(jp[k],v.win_rate,v.win_rate,seqCols[k]);}).join('');
+  document.getElementById('a3').innerHTML =
+    bars
+    + `<table style="margin-top:12px"><thead><tr><th>乖離バケット</th><th>頭数</th><th>単勝率</th><th>複勝率</th><th>単勝回収率</th></tr></thead><tbody>${rows}</tbody></table>`
+    + (anyApprox?`<div class="muted" style="font-size:11px;margin-top:7px">※回収率は発走前オッズ（控除前）での近似。確定払戻（JV-Link）取込後に実値化。</div>`:'');
+
+  // 軸4
+  const bins=m.axis4_calibration.bins||[];
+  const maxW=Math.max(0.001,...bins.map(b=>b.win_rate||0));
+  document.getElementById('a4').innerHTML =
+    bins.map((b,i)=>{
+      const lbl=`第${i+1}帯 (${b.score_min}–${b.score_max})`;
+      return `<div class="bar-row"><div class="lbl" style="width:180px">${lbl}</div>
+        <div class="bar-track" style="position:relative">
+          <div class="bar-fill" style="width:${(b.in3_rate||0)*100}%;background:var(--seq-100)"></div>
+          <div class="bar-fill" style="width:${(b.win_rate||0)*100}%;background:var(--seq-400);position:absolute;top:0;left:0"></div>
+        </div>
+        <div class="val">${pct(b.win_rate)}<span class="muted" style="font-size:10px"> / ${pct(b.in3_rate)}</span></div></div>`;
+    }).join('')
+    + `<div class="muted" style="font-size:11px;margin-top:6px">各帯 n≈${bins[0]?bins[0].n:0}。バー＝単勝率（濃）と複勝率（淡）。</div>`;
+
+  // セグメント
+  const seg=m.segment_breakdown;
+  const segTable=(title,arr)=>`<div style="font-size:12px;color:var(--muted);margin:2px 0 4px">${title}</div>`
+    +`<table><thead><tr><th>区分</th><th>R数</th><th>単勝率</th><th>複勝率</th></tr></thead><tbody>`
+    +arr.map(x=>`<tr><td>${x.key||'—'}</td><td>${x.n}</td><td>${pct(x.win_rate)}</td><td>${pct(x.place_rate)}</td></tr>`).join('')
+    +`</tbody></table>`;
+  document.getElementById('seg').innerHTML =
+    `<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">`
+    + `<div>${segTable('セグメント別（芝ダ×距離）', seg.by_segment)}</div>`
+    + `<div>${segTable('競馬場別', seg.by_jyo)}</div></div>`;
+
+  // 時系列
+  const ts=m.timeseries||[];
+  document.getElementById('ts').innerHTML = tsChart(ts);
+
+  document.getElementById('foot').innerHTML =
+    `軸1は着順のみで算出。軸2・3の市場側は公開ページの発走前オッズ（正規化市場勝率）を使用。`
+    + `較正・回収率の実値化には JV-Link の確定着順・払戻が必要です。`
+    + ` ／ 生成元: predictions×results。`;
+}
+
+function tsChart(ts){
+  if(!ts.length) return '<div class="muted" style="font-size:12.5px">実績が蓄積されると、日次の的中率推移がここに描画されます。</div>';
+  const W=820,H=180,P=34;
+  const xs=ts.map((_,i)=>ts.length===1?W/2:P+i*(W-2*P)/(ts.length-1));
+  const y=v=>H-P-(v||0)*(H-2*P);
+  const path=(key,col)=>{
+    const pts=ts.map((d,i)=>`${xs[i]},${y(d[key])}`);
+    const line=ts.length===1?'':`<polyline fill="none" stroke="${col}" stroke-width="2" points="${pts.join(' ')}"/>`;
+    const dots=ts.map((d,i)=>`<circle cx="${xs[i]}" cy="${y(d[key])}" r="4.5" fill="${col}"/>`).join('');
+    return line+dots;
+  };
+  const grid=[0,.25,.5,.75,1].map(g=>`<line x1="${P}" y1="${y(g)}" x2="${W-P}" y2="${y(g)}" stroke="var(--grid)"/>
+    <text x="${P-6}" y="${y(g)+3}" text-anchor="end" font-size="10" fill="var(--muted)">${g*100}%</text>`).join('');
+  const xlab=ts.map((d,i)=>`<text x="${xs[i]}" y="${H-P+14}" text-anchor="middle" font-size="10" fill="var(--muted)">${d.date.slice(5)}</text>`).join('');
+  return `<div class="legend"><span><i style="background:var(--series-model)"></i>単勝率</span><span><i style="background:var(--seq-250)"></i>複勝率</span></div>`
+    +`<svg viewBox="0 0 ${W} ${H}" width="100%">${grid}${xlab}${path('place_rate','var(--seq-250)')}${path('win_rate','var(--series-model)')}</svg>`;
+}
+
+fetch('data/metrics.json',{cache:'no-store'})
+  .then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
+  .then(render)
+  .catch(e=>{document.getElementById('banner').className='banner';
+    document.getElementById('banner').innerHTML='metrics.json を読み込めませんでした（'+e.message+'）。ローカルで開く場合は簡易サーバ経由でアクセスしてください。';});
+</script>
+</body>
+</html>

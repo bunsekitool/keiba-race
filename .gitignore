@@ -1,0 +1,32 @@
+# === 大容量・ローカル専用（公開リポジトリに上げない）===
+# JV-Data データベース（数百MB〜GB）
+*.db
+*.db-journal
+*.sqlite
+ecore_*.db
+slim*.db
+
+# アーカイブ・キャッシュ
+*.zip
+*.7z
+__pycache__/
+*.pyc
+.DS_Store
+
+# JRA-VAN 速報キャッシュ（ローカル取得物）
+Data Lab/
+cache/
+*.rtd
+
+# 巨大な中間CSV（必要な集計結果だけを別途コミット）
+pf_scores_explore.csv
+prerace_*.csv
+
+# モデル本体（大きい場合。公開したくなければ有効化）
+# pf_model_*.txt
+# pf_base_*.txt
+
+# === 公開するもの（無視しない）===
+# dashboard.html
+# collector/*.py
+# data/**/*.json   ← 予想・オッズ・結果・metrics は小さいので公開OK
