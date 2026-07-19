@@ -18,7 +18,9 @@
   .wrap{max-width:960px;margin:0 auto;padding:22px 20px 80px}
   h1{font-size:21px;margin:0 0 2px}
   .sub{font-size:13px;color:var(--muted);margin-bottom:16px}
-  a.nav{color:var(--accent);font-size:12.5px;text-decoration:none}
+  a.nav{color:var(--accent);font-size:12.5px;text-decoration:none;white-space:nowrap}
+  .topbar{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .navrow{display:flex;gap:12px}
   .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
   select{font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-family:inherit;max-width:100%}
   .rhead{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:13px 16px;margin-bottom:12px}
@@ -40,20 +42,46 @@
   .muted{color:var(--muted)}
   .hint{font-size:11px;color:var(--muted);margin-top:8px}
   .big{font-size:14px;font-weight:650}
+  .tblwrap{overflow-x:auto}
+  /* モバイル用カード（狭い画面で表の代わりに表示） */
+  .cards{display:none}
+  .hcard{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px;background:#fff}
+  .hcard.fin1{background:var(--g1)} .hcard.fin2{background:var(--g2)} .hcard.fin3{background:var(--g3)}
+  .hc-top{display:flex;align-items:center;gap:8px}
+  .hc-rank{font-size:12.5px;font-weight:700;color:var(--muted);flex:none;min-width:46px}
+  .hc-rank.honmei{color:var(--model)}
+  .hc-name{flex:1;min-width:0;font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .hc-name.scratch{color:var(--muted);text-decoration:line-through}
+  .hc-fin{flex:none;font-size:16px;font-weight:700;white-space:nowrap}
+  .hc-sub{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);margin-top:3px}
+  .hc-stats{display:flex;gap:10px 14px;flex-wrap:wrap;font-size:12px;margin-top:6px;font-variant-numeric:tabular-nums}
+  .hc-stats b{font-weight:650;color:var(--ink)}
+  @media (max-width:640px){
+    .wrap{padding:16px 13px 60px}
+    h1{font-size:19px}
+    .tblwrap{display:none}
+    .cards{display:block}
+    .controls{gap:8px}
+    .controls>label{display:block;width:100%;font-size:12.5px;color:var(--muted)}
+    select{width:100%;margin-top:3px}
+    .controls>label.chk{display:flex;align-items:center;gap:6px;width:auto}
+    .controls>label.chk select{width:auto}
+    .rhead .pay{line-height:1.7}
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div style="display:flex;justify-content:space-between;align-items:baseline">
+  <div class="topbar">
     <h1>レース個別ビュー</h1>
-    <div><a class="nav" href="https://bunsekitool.github.io/race-view/">予想アプリ ↗</a>　<a class="nav" href="dashboard.html">← 勝率ダッシュボードへ</a></div>
+    <div class="navrow"><a class="nav" href="https://bunsekitool.github.io/race-view/">予想アプリ ↗</a><a class="nav" href="dashboard.html">← 勝率ダッシュボードへ</a></div>
   </div>
   <div class="sub">レースを選ぶと、アプリ（pfモデル）の順位・数値と、実際の結果を並べて確認できます。</div>
 
   <div class="controls">
     <label>日付 <select id="dsel"></select></label>
     <label>レース <select id="rsel"></select></label>
-    <label style="font-size:12.5px;color:var(--muted)"><input type="checkbox" id="byfin"> 着順で並べ替え</label>
+    <label class="chk" style="font-size:12.5px;color:var(--muted)"><input type="checkbox" id="byfin"> 着順で並べ替え</label>
   </div>
 
   <div id="out"></div>
@@ -128,33 +156,55 @@ async function render(){
     <span class="muted">左＝アプリの数値／右＝実際の結果</span>
   </div>`;
 
-  html += `<table><thead><tr>
-    <th>pf順</th><th>pfスコア</th><th>馬番</th><th>馬名</th><th>騎手</th>
-    <th>市場人気</th><th>市場勝率</th><th>乖離</th>
-    <th class="sep">着順</th><th>確定オッズ</th><th>確定人気</th>
-  </tr></thead><tbody>`;
-  rows.forEach(h=>{
-    const finCls = h.finish===1?'fin1':h.finish===2?'fin2':h.finish===3?'fin3':'';
-    const nameCls = h.scratched?'scratch':'';
-    const honmei = h.pf_rank===1;
-    const div = h.divergence;
-    const divTxt = div==null?'—':(div>0?`+${div}`:`${div}`);
-    html+=`<tr class="${finCls}">
+  const divOf=h=>{const d=h.divergence;return d==null?'—':(d>0?`+${d}`:`${d}`);};
+  // デスクトップ: テーブル
+  const trs=rows.map(h=>{
+    const finCls=h.finish===1?'fin1':h.finish===2?'fin2':h.finish===3?'fin3':'';
+    const honmei=h.pf_rank===1, d=h.divergence;
+    return `<tr class="${finCls}">
       <td class="${honmei?'honmei':''}">${h.pf_rank??'—'}${honmei?'<span class="badge">本命</span>':''}</td>
       <td>${h.pf_score!=null?h.pf_score.toFixed(4):'—'}</td>
       <td>${h.umaban}</td>
-      <td class="${nameCls}">${h.bamei||''}</td>
+      <td class="${h.scratched?'scratch':''}">${h.bamei||''}</td>
       <td class="muted">${h.kisyu||''}</td>
       <td>${h.market_rank??'—'}</td>
       <td>${h.market_q!=null?(h.market_q*100).toFixed(1)+'%':'—'}</td>
-      <td class="${div>0?'':(div<0?'muted':'')}">${divTxt}</td>
+      <td class="${d>0?'':(d<0?'muted':'')}">${divOf(h)}</td>
       <td class="sep ${h.finish?'big':''}">${h.scratched?'取消':(h.finish??'—')}</td>
       <td>${fmtOdds(h.win_odds)}</td>
       <td class="muted">${h.popularity??'—'}</td>
     </tr>`;
-  });
-  html+='</tbody></table>';
-  html+=`<div class="hint">乖離＝市場人気順位 − pf順位（正＝モデルが市場より高評価）。着順の地色は1〜3着。</div>`;
+  }).join('');
+  // モバイル: カード
+  const cards=rows.map(h=>{
+    const finCls=h.finish===1?'fin1':h.finish===2?'fin2':h.finish===3?'fin3':'';
+    const honmei=h.pf_rank===1;
+    const finTxt=h.scratched?'取消':(h.finish!=null?h.finish+'着':'—');
+    return `<div class="hcard ${finCls}">
+      <div class="hc-top">
+        <span class="hc-rank ${honmei?'honmei':''}">pf${h.pf_rank??'—'}${honmei?'<span class="badge">本命</span>':''}</span>
+        <span class="hc-name ${h.scratched?'scratch':''}">${h.umaban} ${h.bamei||''}</span>
+        <span class="hc-fin">${finTxt}</span>
+      </div>
+      <div class="hc-sub">
+        <span>${h.kisyu||''}</span>
+        <span>確定 ${fmtOdds(h.win_odds)}倍 / ${h.popularity??'—'}番人気</span>
+      </div>
+      <div class="hc-stats">
+        <span class="muted">pf <b>${h.pf_score!=null?h.pf_score.toFixed(4):'—'}</b></span>
+        <span class="muted">市場 <b>${h.market_rank??'—'}番</b> ${h.market_q!=null?(h.market_q*100).toFixed(1)+'%':'—'}</span>
+        <span class="muted">乖離 <b>${divOf(h)}</b></span>
+      </div>
+    </div>`;
+  }).join('');
+
+  html += `<div class="tblwrap"><table><thead><tr>
+    <th>pf順</th><th>pfスコア</th><th>馬番</th><th>馬名</th><th>騎手</th>
+    <th>市場人気</th><th>市場勝率</th><th>乖離</th>
+    <th class="sep">着順</th><th>確定オッズ</th><th>確定人気</th>
+  </tr></thead><tbody>${trs}</tbody></table></div>`;
+  html += `<div class="cards">${cards}</div>`;
+  html += `<div class="hint">乖離＝市場人気順位 − pf順位（正＝モデルが市場より高評価）。着順の地色は1〜3着。</div>`;
   out.innerHTML=html;
 }
 
