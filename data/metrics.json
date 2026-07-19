@@ -1,7 +1,7 @@
 {
   "generated_from": {
-    "predictions": "/home/claude/repo/collector/../data/predictions/*.json",
-    "results": "/home/claude/repo/collector/../data/results/*.json"
+    "predictions": "C:\\keiba-site\\collector\\..\\data\\predictions\\*.json",
+    "results": "C:\\keiba-site\\collector\\..\\data\\results\\*.json"
   },
   "data_status": {
     "days": [
@@ -9,160 +9,160 @@
     ],
     "num_races_total": 35,
     "num_races_with_result": 35,
-    "results_are_demo": true,
+    "results_are_demo": false,
     "warnings": []
   },
   "axis1_honmei": {
-    "n_races": 35,
-    "win_rate": 0.22857142857142856,
-    "place_rate": 0.5142857142857142,
-    "rentai_rate": 0.45714285714285713,
-    "avg_finish": 3.2857142857142856,
-    "honmei_avg_market_rank": 2.0285714285714285,
-    "top2_any_place_rate": 0.6571428571428571,
-    "top3_any_place_rate": 0.8571428571428571
+    "n_races": 15,
+    "win_rate": 0.13333333333333333,
+    "place_rate": 0.5333333333333333,
+    "rentai_rate": 0.3333333333333333,
+    "avg_finish": 4.866666666666666,
+    "honmei_avg_market_rank": 1.6666666666666667,
+    "top2_any_place_rate": 0.7333333333333333,
+    "top3_any_place_rate": 0.8666666666666667
   },
   "axis2_vs_market": {
-    "mean_rho_model": 0.5764830820071863,
-    "mean_rho_market": 0.7136486671062868,
-    "rho_edge": -0.13716558509910048,
-    "mean_agreement_spearman": 0.7933999999999998,
+    "mean_rho_model": 0.44236216999374894,
+    "mean_rho_market": 0.5420082803884382,
+    "rho_edge": -0.09964611039468924,
+    "mean_agreement_spearman": 0.7934000000000001,
     "split_races": {
-      "n": 16,
-      "honmei_beats_favorite": 3,
+      "n": 6,
+      "honmei_beats_favorite": 2,
       "ties": 0,
-      "honmei_win_share": 0.1875
+      "honmei_win_share": 0.3333333333333333
     }
   },
   "axis3_edge": {
     "model_high(+2以上)": {
-      "n_horses": 115,
-      "win_rate": 0.008695652173913044,
-      "place_rate": 0.08695652173913043,
-      "tansho_roi": 0.10434782608695652,
+      "n_horses": 46,
+      "win_rate": 0.021739130434782608,
+      "place_rate": 0.15217391304347827,
+      "tansho_roi": 0.43695652173913047,
       "roi_uses_confirmed_odds": true
     },
     "model_high(+1)": {
-      "n_horses": 64,
-      "win_rate": 0.046875,
-      "place_rate": 0.140625,
-      "tansho_roi": 0.609375,
+      "n_horses": 33,
+      "win_rate": 0.030303030303030304,
+      "place_rate": 0.18181818181818182,
+      "tansho_roi": 0.2939393939393939,
       "roi_uses_confirmed_odds": true
     },
     "neutral(0)": {
-      "n_horses": 113,
-      "win_rate": 0.09734513274336283,
-      "place_rate": 0.25663716814159293,
-      "tansho_roi": 0.595575221238938,
+      "n_horses": 48,
+      "win_rate": 0.10416666666666667,
+      "place_rate": 0.22916666666666666,
+      "tansho_roi": 0.3104166666666667,
       "roi_uses_confirmed_odds": true
     },
     "market_high(-1以下)": {
-      "n_horses": 187,
-      "win_rate": 0.10695187165775401,
-      "place_rate": 0.3048128342245989,
-      "tansho_roi": 1.4042780748663102,
+      "n_horses": 73,
+      "win_rate": 0.1095890410958904,
+      "place_rate": 0.2876712328767123,
+      "tansho_roi": 0.8095890410958904,
       "roi_uses_confirmed_odds": true
     }
   },
   "axis4_calibration": {
     "bins": [
       {
-        "score_min": 0.0047,
-        "score_max": 0.0204,
-        "n": 96,
-        "win_rate": 0.03125,
-        "in3_rate": 0.07291666666666667
+        "score_min": 0.0054,
+        "score_max": 0.0164,
+        "n": 40,
+        "win_rate": 0.0,
+        "in3_rate": 0.025
       },
       {
-        "score_min": 0.0204,
-        "score_max": 0.0367,
-        "n": 96,
-        "win_rate": 0.03125,
-        "in3_rate": 0.08333333333333333
+        "score_min": 0.0166,
+        "score_max": 0.0355,
+        "n": 40,
+        "win_rate": 0.05,
+        "in3_rate": 0.1
       },
       {
-        "score_min": 0.0369,
-        "score_max": 0.0695,
-        "n": 96,
-        "win_rate": 0.052083333333333336,
-        "in3_rate": 0.20833333333333334
+        "score_min": 0.0357,
+        "score_max": 0.0725,
+        "n": 40,
+        "win_rate": 0.05,
+        "in3_rate": 0.125
       },
       {
-        "score_min": 0.0703,
-        "score_max": 0.116,
-        "n": 96,
-        "win_rate": 0.08333333333333333,
-        "in3_rate": 0.2604166666666667
+        "score_min": 0.073,
+        "score_max": 0.1196,
+        "n": 40,
+        "win_rate": 0.05,
+        "in3_rate": 0.4
       },
       {
-        "score_min": 0.1166,
+        "score_min": 0.1302,
         "score_max": 0.4179,
-        "n": 96,
-        "win_rate": 0.16666666666666666,
-        "in3_rate": 0.46875
+        "n": 40,
+        "win_rate": 0.225,
+        "in3_rate": 0.475
       }
     ]
   },
   "segment_breakdown": {
     "by_segment": [
       {
+        "key": "turf2000",
+        "n": 4,
+        "win_rate": 0.0,
+        "place_rate": 0.5
+      },
+      {
+        "key": "turf1200",
+        "n": 3,
+        "win_rate": 0.0,
+        "place_rate": 0.6666666666666666
+      },
+      {
         "key": "dirt1600",
-        "n": 9,
+        "n": 3,
         "win_rate": 0.0,
         "place_rate": 0.3333333333333333
       },
       {
-        "key": "turf1200",
-        "n": 8,
-        "win_rate": 0.25,
-        "place_rate": 0.5
-      },
-      {
         "key": "turf1600",
-        "n": 7,
-        "win_rate": 0.14285714285714285,
-        "place_rate": 0.5714285714285714
-      },
-      {
-        "key": "turf2000",
-        "n": 6,
-        "win_rate": 0.5,
-        "place_rate": 0.6666666666666666
+        "n": 3,
+        "win_rate": 0.3333333333333333,
+        "place_rate": 0.3333333333333333
       },
       {
         "key": "dirt800",
-        "n": 5,
-        "win_rate": 0.4,
-        "place_rate": 0.6
+        "n": 2,
+        "win_rate": 0.5,
+        "place_rate": 1.0
       }
     ],
     "by_jyo": [
       {
         "key": "函館",
-        "n": 12,
-        "win_rate": 0.25,
-        "place_rate": 0.5833333333333334
+        "n": 6,
+        "win_rate": 0.0,
+        "place_rate": 0.5
       },
       {
         "key": "福島",
-        "n": 12,
-        "win_rate": 0.3333333333333333,
-        "place_rate": 0.5833333333333334
+        "n": 5,
+        "win_rate": 0.4,
+        "place_rate": 0.6
       },
       {
         "key": "小倉",
-        "n": 11,
-        "win_rate": 0.09090909090909091,
-        "place_rate": 0.36363636363636365
+        "n": 4,
+        "win_rate": 0.0,
+        "place_rate": 0.5
       }
     ]
   },
   "timeseries": [
     {
       "date": "2026-07-19",
-      "n": 35,
-      "win_rate": 0.22857142857142856,
-      "place_rate": 0.5142857142857142
+      "n": 15,
+      "win_rate": 0.13333333333333333,
+      "place_rate": 0.5333333333333333
     }
   ]
 }

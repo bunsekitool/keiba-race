@@ -23,7 +23,7 @@
 | `parse_jv_o1.py` | `.rtd`(O1) → `data/odds/YYYYMMDD.json`（確定単勝オッズ・人気） | 不要 |
 | `aggregate.py` | 予想×実績×オッズ → `docs/data/metrics.json`（軸①〜④） | 不要 |
 | `make_demo_results.py` | 【デモ】市場qから擬似着順を生成（本番不使用） | 不要 |
-| `fetch_results.py` | **未実装**：蓄積系 `RACE`(SE=確定着順) を取得 → `data/results/YYYYMMDD.json` | 要 |
+| `fetch_results.py` | **実装済**：EveryDB3 `ecore.db` の `N_UMA_RACE` から確定着順・確定単勝オッズ・人気を取得 → `data/results/YYYYMMDD.json` | **不要**（COM不要・SQLite直読み） |
 
 ## 使い方（現状）
 
@@ -44,20 +44,27 @@ python aggregate.py
 #   docs/ で python -m http.server → dashboard.html を開く
 ```
 
-## 次の一手：着順の取得（フェーズ2の入口）
+## 着順の取得（実装済み）
 
-的中率・回収率・βを「実測」にするには確定着順が要る。`.rtd`（速報系）には無いので、
-**蓄積系データ `RACE`（`SE` レコード＝確定着順、`HR`＝払戻）** を取得する。方式は2択：
+確定着順・確定単勝オッズ・人気は EveryDB3 の `ecore.db` の **`N_UMA_RACE`** に揃っている
+（`KakuteiJyuni`＝着順, `Odds`＝確定単勝(1/10), `Ninki`＝人気, `IJyoCD`＝異常区分）。
+`fetch_results.py` がこれを読み、`aggregate.py` が期待する results スキーマで出力する。
+JV-Link/COM は不要（SQLite の read-only 接続）。
 
-1. **pywin32 で JVOpen("RACE", …) → JVRead ループ**（`fetch_results.py` として実装可）。
-   32bit Python + JV-Link 必須。SE レコードの `KakuteiJyuni`(確定着順) と馬番で
-   `data/results/YYYYMMDD.json` を出力すれば、そのまま `aggregate.py` に流れる。
-2. 既存アプリが結果をどこかに保存しているなら、その出力を results スキーマに変換。
+```bash
+# 確定後（EveryDB3で当日の成績を取り込んだ後）に実行
+python fetch_results.py --ecore "%LOCALAPPDATA%\EveryDB3\ecore.db" --date 20260719
+# バックアップDBでも可: --ecore "C:\keiba\ecore_backup_20260719.db"
+```
 
-results スキーマ（`aggregate.py` が期待する形）:
+results スキーマ（`aggregate.py` が読む形）:
 ```json
 { "date":"2026-07-19", "races":[
   { "rkey":"202602011201", "num_runners":8, "horses":[
     { "umaban":5, "bamei":"…", "finish":2, "scratched":false, "win_odds":4.9, "popularity":2 } ]}]}
 ```
-`parse_jv_o1.py` の出力（確定オッズ・人気）を results に合流させれば、回収率が実オッズ化する。
+
+タイミング注意: 当日の着順は「レース確定 → EveryDB3 が蓄積系(成績)を取り込む」まで空。
+`fetch_results.py` は着順0件のとき警告を出す。過去日でまず動作確認するのが安全
+（例: `--date 20260712` など、確定済みの開催日）。`make_demo_results.py` は
+着順取得前のプレビュー専用で、本番では使わない。

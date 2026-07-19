@@ -1,213 +1,256 @@
 {
   "date": "2026-07-19",
-  "_demo": true,
-  "note": "デモ生成(market_qベース)。本番はJV-Link出力に置換。",
+  "source": "EveryDB3 ecore.db (N_UMA_RACE)",
+  "num_races": 35,
+  "num_finished_horses": 200,
   "races": [
     {
       "rkey": "202602011201",
       "num_runners": 8,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
-        {
-          "umaban": 5,
-          "bamei": "タイフーンナイン",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 4.7,
-          "popularity": 2
-        },
         {
           "umaban": 1,
           "bamei": "ステラトップガン",
-          "finish": 2,
+          "finish": 1,
           "scratched": false,
           "win_odds": 1.7,
           "popularity": 1
         },
         {
-          "umaban": 8,
-          "bamei": "キチロクタワー",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 4.9,
-          "popularity": 3
-        },
-        {
           "umaban": 2,
           "bamei": "リーゼントエース",
-          "finish": 5,
+          "finish": 8,
           "scratched": false,
-          "win_odds": 17.3,
+          "win_odds": 17.8,
           "popularity": 5
-        },
-        {
-          "umaban": 4,
-          "bamei": "ショパンコンクール",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 5.8,
-          "popularity": 4
         },
         {
           "umaban": 3,
           "bamei": "リアルジャパン",
-          "finish": 1,
+          "finish": 3,
           "scratched": false,
-          "win_odds": 19.3,
+          "win_odds": 20.8,
           "popularity": 6
+        },
+        {
+          "umaban": 4,
+          "bamei": "ショパンコンクール",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 6.0,
+          "popularity": 4
+        },
+        {
+          "umaban": 5,
+          "bamei": "タイフーンナイン",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 4.9,
+          "popularity": 2
+        },
+        {
+          "umaban": 6,
+          "bamei": "ゴートゥービッツン",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 132.0,
+          "popularity": 8
         },
         {
           "umaban": 7,
           "bamei": "アイルドフルール",
           "finish": 7,
           "scratched": false,
-          "win_odds": 130.9,
+          "win_odds": 114.0,
           "popularity": 7
         },
         {
-          "umaban": 6,
-          "bamei": "ゴートゥービッツン",
-          "finish": 8,
+          "umaban": 8,
+          "bamei": "キチロクタワー",
+          "finish": 4,
           "scratched": false,
-          "win_odds": 131.1,
-          "popularity": 8
+          "win_odds": 5.1,
+          "popularity": 3
         }
       ]
     },
     {
       "rkey": "202602011202",
       "num_runners": 10,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
-        {
-          "umaban": 4,
-          "bamei": "ジャーナーリア",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 2.1,
-          "popularity": 1
-        },
-        {
-          "umaban": 8,
-          "bamei": "エコロセレナ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 2.6,
-          "popularity": 2
-        },
-        {
-          "umaban": 10,
-          "bamei": "トルークマクト",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 6.3,
-          "popularity": 3
-        },
-        {
-          "umaban": 6,
-          "bamei": "ホワイトラバーズ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 26.1,
-          "popularity": 6
-        },
-        {
-          "umaban": 5,
-          "bamei": "ミスマラッカ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 15.2,
-          "popularity": 5
-        },
         {
           "umaban": 1,
           "bamei": "デルマハルナ",
-          "finish": 8,
+          "finish": 3,
           "scratched": false,
-          "win_odds": 42.2,
+          "win_odds": 44.9,
           "popularity": 8
         },
         {
-          "umaban": 7,
-          "bamei": "ミスチヴマリアンヌ",
-          "finish": 3,
+          "umaban": 2,
+          "bamei": "ラブデウザ",
+          "finish": 5,
           "scratched": false,
-          "win_odds": 13.4,
-          "popularity": 4
+          "win_odds": 37.2,
+          "popularity": 7
         },
         {
           "umaban": 3,
           "bamei": "ハネマン",
           "finish": 10,
           "scratched": false,
-          "win_odds": 90.2,
+          "win_odds": 97.9,
           "popularity": 9
+        },
+        {
+          "umaban": 4,
+          "bamei": "ジャーナーリア",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 2.1,
+          "popularity": 1
+        },
+        {
+          "umaban": 5,
+          "bamei": "ミスマラッカ",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 16.2,
+          "popularity": 5
+        },
+        {
+          "umaban": 6,
+          "bamei": "ホワイトラバーズ",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 24.8,
+          "popularity": 6
+        },
+        {
+          "umaban": 7,
+          "bamei": "ミスチヴマリアンヌ",
+          "finish": 1,
+          "scratched": false,
+          "win_odds": 12.8,
+          "popularity": 4
+        },
+        {
+          "umaban": 8,
+          "bamei": "エコロセレナ",
+          "finish": 4,
+          "scratched": false,
+          "win_odds": 2.7,
+          "popularity": 2
         },
         {
           "umaban": 9,
           "bamei": "アルマフレイヤ",
-          "finish": 7,
+          "finish": 9,
           "scratched": false,
-          "win_odds": 102.5,
+          "win_odds": 102.6,
           "popularity": 10
         },
         {
-          "umaban": 2,
-          "bamei": "ラブデウザ",
+          "umaban": 10,
+          "bamei": "トルークマクト",
           "finish": 6,
           "scratched": false,
-          "win_odds": 41.7,
-          "popularity": 7
+          "win_odds": 6.1,
+          "popularity": 3
         }
       ]
     },
     {
       "rkey": "202602011203",
       "num_runners": 14,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
         {
-          "umaban": 13,
-          "bamei": "ニシノモリミチ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 3.9,
-          "popularity": 1
-        },
-        {
-          "umaban": 9,
-          "bamei": "ブレイズランナー",
+          "umaban": 1,
+          "bamei": "サクセスゴールド",
           "finish": 4,
           "scratched": false,
-          "win_odds": 5.6,
-          "popularity": 2
+          "win_odds": 24.4,
+          "popularity": 8
+        },
+        {
+          "umaban": 2,
+          "bamei": "デルマバンダイサン",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 8.9,
+          "popularity": 6
         },
         {
           "umaban": 3,
           "bamei": "ルージュリヴィエラ",
-          "finish": 3,
+          "finish": 2,
           "scratched": false,
-          "win_odds": 5.4,
+          "win_odds": 5.7,
           "popularity": 4
+        },
+        {
+          "umaban": 4,
+          "bamei": "ロジクリスエス",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 67.2,
+          "popularity": 10
+        },
+        {
+          "umaban": 5,
+          "bamei": "マスカルポーネ",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 40.2,
+          "popularity": 9
+        },
+        {
+          "umaban": 6,
+          "bamei": "キヨタリート",
+          "finish": 14,
+          "scratched": false,
+          "win_odds": 82.0,
+          "popularity": 11
+        },
+        {
+          "umaban": 7,
+          "bamei": "キセログラフィカ",
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 12.7,
+          "popularity": 7
+        },
+        {
+          "umaban": 8,
+          "bamei": "トーレス",
+          "finish": 9,
+          "scratched": false,
+          "win_odds": 347.6,
+          "popularity": 14
+        },
+        {
+          "umaban": 9,
+          "bamei": "ブレイズランナー",
+          "finish": 1,
+          "scratched": false,
+          "win_odds": 5.0,
+          "popularity": 2
+        },
+        {
+          "umaban": 10,
+          "bamei": "ドゥブルヴェ",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 185.4,
+          "popularity": 13
         },
         {
           "umaban": 11,
           "bamei": "ホウオウファラオ",
-          "finish": 1,
+          "finish": 3,
           "scratched": false,
-          "win_odds": 5.5,
-          "popularity": 2
-        },
-        {
-          "umaban": 1,
-          "bamei": "サクセスゴールド",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 24.7,
-          "popularity": 8
+          "win_odds": 5.0,
+          "popularity": 3
         },
         {
           "umaban": 12,
@@ -218,1116 +261,1048 @@
           "popularity": 5
         },
         {
-          "umaban": 7,
-          "bamei": "キセログラフィカ",
-          "finish": 9,
+          "umaban": 13,
+          "bamei": "ニシノモリミチ",
+          "finish": 11,
           "scratched": false,
-          "win_odds": 14.3,
-          "popularity": 7
-        },
-        {
-          "umaban": 2,
-          "bamei": "デルマバンダイサン",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 9.2,
-          "popularity": 6
-        },
-        {
-          "umaban": 4,
-          "bamei": "ロジクリスエス",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 76.6,
-          "popularity": 10
-        },
-        {
-          "umaban": 10,
-          "bamei": "ドゥブルヴェ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 175.9,
-          "popularity": 13
+          "win_odds": 3.7,
+          "popularity": 1
         },
         {
           "umaban": 14,
           "bamei": "ダイユウアドバンス",
-          "finish": 11,
+          "finish": 13,
           "scratched": false,
-          "win_odds": 145.6,
+          "win_odds": 129.4,
           "popularity": 12
-        },
-        {
-          "umaban": 6,
-          "bamei": "キヨタリート",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 81.7,
-          "popularity": 11
-        },
-        {
-          "umaban": 5,
-          "bamei": "マスカルポーネ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 39.3,
-          "popularity": 9
-        },
-        {
-          "umaban": 8,
-          "bamei": "トーレス",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 328.1,
-          "popularity": 14
         }
       ]
     },
     {
       "rkey": "202602011204",
       "num_runners": 13,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
+        {
+          "umaban": 1,
+          "bamei": "フクチャンブラック",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 109.0,
+          "popularity": 12
+        },
+        {
+          "umaban": 2,
+          "bamei": "プリュイドール",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 14.1,
+          "popularity": 7
+        },
+        {
+          "umaban": 3,
+          "bamei": "ウインカトリーヌ",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 5.8,
+          "popularity": 2
+        },
+        {
+          "umaban": 4,
+          "bamei": "フィエスタ",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 85.8,
+          "popularity": 11
+        },
+        {
+          "umaban": 5,
+          "bamei": "ヤクジョ",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 129.5,
+          "popularity": 13
+        },
+        {
+          "umaban": 6,
+          "bamei": "ワダツミ",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 13.9,
+          "popularity": 6
+        },
         {
           "umaban": 7,
           "bamei": "ギオンバヤシ",
-          "finish": 1,
+          "finish": 4,
           "scratched": false,
           "win_odds": 2.8,
           "popularity": 1
         },
         {
-          "umaban": 12,
-          "bamei": "フローレンスフーガ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 7.8,
-          "popularity": 3
-        },
-        {
-          "umaban": 3,
-          "bamei": "ウインカトリーヌ",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 6.3,
-          "popularity": 2
-        },
-        {
-          "umaban": 11,
-          "bamei": "マコトアディントン",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 6.7,
-          "popularity": 3
-        },
-        {
-          "umaban": 2,
-          "bamei": "プリュイドール",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 12.8,
-          "popularity": 7
-        },
-        {
           "umaban": 8,
           "bamei": "レイヌドプランタン",
-          "finish": 3,
+          "finish": 1,
           "scratched": false,
-          "win_odds": 18.3,
+          "win_odds": 20.1,
           "popularity": 9
-        },
-        {
-          "umaban": 13,
-          "bamei": "コティノス",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 17.1,
-          "popularity": 8
         },
         {
           "umaban": 9,
           "bamei": "コスモブラック",
-          "finish": 5,
+          "finish": 9,
           "scratched": false,
-          "win_odds": 23.9,
+          "win_odds": 24.1,
           "popularity": 10
         },
         {
           "umaban": 10,
           "bamei": "シークレットシティ",
-          "finish": 7,
+          "finish": 10,
           "scratched": false,
-          "win_odds": 7.8,
+          "win_odds": 8.1,
           "popularity": 5
         },
         {
-          "umaban": 4,
-          "bamei": "フィエスタ",
-          "finish": 9,
+          "umaban": 11,
+          "bamei": "マコトアディントン",
+          "finish": 3,
           "scratched": false,
-          "win_odds": 82.4,
-          "popularity": 11
+          "win_odds": 7.3,
+          "popularity": 4
         },
         {
-          "umaban": 6,
-          "bamei": "ワダツミ",
-          "finish": 10,
+          "umaban": 12,
+          "bamei": "フローレンスフーガ",
+          "finish": 11,
           "scratched": false,
-          "win_odds": 13.6,
-          "popularity": 6
+          "win_odds": 7.3,
+          "popularity": 3
         },
         {
-          "umaban": 1,
-          "bamei": "フクチャンブラック",
+          "umaban": 13,
+          "bamei": "コティノス",
           "finish": 13,
           "scratched": false,
-          "win_odds": 102.9,
-          "popularity": 12
-        },
-        {
-          "umaban": 5,
-          "bamei": "ヤクジョ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 116.8,
-          "popularity": 13
+          "win_odds": 15.5,
+          "popularity": 8
         }
       ]
     },
     {
       "rkey": "202602011205",
       "num_runners": 14,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
         {
-          "umaban": 8,
-          "bamei": "エコロルーク",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 4.8,
-          "popularity": 2
-        },
-        {
-          "umaban": 6,
-          "bamei": "ロジアコース",
+          "umaban": 1,
+          "bamei": "ランフォーザエイジ",
           "finish": 2,
           "scratched": false,
-          "win_odds": 7.6,
-          "popularity": 4
+          "win_odds": 9.3,
+          "popularity": 5
         },
         {
-          "umaban": 14,
-          "bamei": "ヒアカムズザサン",
-          "finish": 6,
+          "umaban": 2,
+          "bamei": "シャムスクッカ",
+          "finish": 9,
           "scratched": false,
-          "win_odds": 16.9,
-          "popularity": 7
+          "win_odds": 51.5,
+          "popularity": 12
         },
         {
           "umaban": 3,
           "bamei": "フィオリアーモ",
-          "finish": 5,
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 6.0,
+          "popularity": 3
+        },
+        {
+          "umaban": 4,
+          "bamei": "テンカタイヘイ",
+          "finish": 1,
+          "scratched": false,
+          "win_odds": 19.4,
+          "popularity": 8
+        },
+        {
+          "umaban": 5,
+          "bamei": "ルージュロマーナ",
+          "finish": 3,
+          "scratched": false,
+          "win_odds": 32.2,
+          "popularity": 10
+        },
+        {
+          "umaban": 6,
+          "bamei": "ロジアコース",
+          "finish": 7,
           "scratched": false,
           "win_odds": 6.9,
-          "popularity": 3
+          "popularity": 4
+        },
+        {
+          "umaban": 7,
+          "bamei": "カリスマン",
+          "finish": 11,
+          "scratched": false,
+          "win_odds": 75.8,
+          "popularity": 13
+        },
+        {
+          "umaban": 8,
+          "bamei": "エコロルーク",
+          "finish": 14,
+          "scratched": false,
+          "win_odds": 4.9,
+          "popularity": 2
+        },
+        {
+          "umaban": 9,
+          "bamei": "ステラルミノーザ",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 44.4,
+          "popularity": 11
+        },
+        {
+          "umaban": 10,
+          "bamei": "エコロヴァルド",
+          "finish": 13,
+          "scratched": false,
+          "win_odds": 19.5,
+          "popularity": 9
+        },
+        {
+          "umaban": 11,
+          "bamei": "ラヴァンドローリエ",
+          "finish": 4,
+          "scratched": false,
+          "win_odds": 156.5,
+          "popularity": 14
+        },
+        {
+          "umaban": 12,
+          "bamei": "プリームスリール",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 11.9,
+          "popularity": 6
         },
         {
           "umaban": 13,
           "bamei": "サルトヴェローチェ",
-          "finish": 1,
+          "finish": 5,
           "scratched": false,
           "win_odds": 3.4,
           "popularity": 1
         },
         {
-          "umaban": 10,
-          "bamei": "エコロヴァルド",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 18.4,
-          "popularity": 9
-        },
-        {
-          "umaban": 5,
-          "bamei": "ルージュロマーナ",
+          "umaban": 14,
+          "bamei": "ヒアカムズザサン",
           "finish": 12,
           "scratched": false,
-          "win_odds": 29.2,
-          "popularity": 10
-        },
-        {
-          "umaban": 1,
-          "bamei": "ランフォーザエイジ",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 9.4,
-          "popularity": 5
-        },
-        {
-          "umaban": 7,
-          "bamei": "カリスマン",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 81.0,
-          "popularity": 13
-        },
-        {
-          "umaban": 12,
-          "bamei": "プリームスリール",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 11.8,
-          "popularity": 6
-        },
-        {
-          "umaban": 11,
-          "bamei": "ラヴァンドローリエ",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 170.9,
-          "popularity": 14
-        },
-        {
-          "umaban": 2,
-          "bamei": "シャムスクッカ",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 48.0,
-          "popularity": 12
-        },
-        {
-          "umaban": 9,
-          "bamei": "ステラルミノーザ",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 42.0,
-          "popularity": 11
-        },
-        {
-          "umaban": 4,
-          "bamei": "テンカタイヘイ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 17.8,
-          "popularity": 8
+          "win_odds": 16.9,
+          "popularity": 7
         }
       ]
     },
     {
       "rkey": "202602011206",
       "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
-        {
-          "umaban": 10,
-          "bamei": "マメーアップル",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 2.8,
-          "popularity": 1
-        },
         {
           "umaban": 1,
           "bamei": "コスモファーブロス",
-          "finish": 2,
+          "finish": 1,
           "scratched": false,
-          "win_odds": 3.1,
+          "win_odds": 3.4,
           "popularity": 2
-        },
-        {
-          "umaban": 5,
-          "bamei": "ソワンドヴィクター",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 19.0,
-          "popularity": 6
-        },
-        {
-          "umaban": 9,
-          "bamei": "リネアベルタ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 13.8,
-          "popularity": 5
-        },
-        {
-          "umaban": 6,
-          "bamei": "マリノリュミエール",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 9.6,
-          "popularity": 4
-        },
-        {
-          "umaban": 15,
-          "bamei": "チェサピークベイ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 40.5,
-          "popularity": 11
-        },
-        {
-          "umaban": 3,
-          "bamei": "ライトオブジアース",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 6.7,
-          "popularity": 3
-        },
-        {
-          "umaban": 12,
-          "bamei": "クープグラッセ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 18.9,
-          "popularity": 7
-        },
-        {
-          "umaban": 16,
-          "bamei": "ディサイドオンミー",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 33.2,
-          "popularity": 9
-        },
-        {
-          "umaban": 14,
-          "bamei": "トゥルージョワ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 28.6,
-          "popularity": 10
-        },
-        {
-          "umaban": 4,
-          "bamei": "ノブピースオブラブ",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 112.3,
-          "popularity": 14
         },
         {
           "umaban": 2,
           "bamei": "セイカユウヒ",
+          "finish": 4,
+          "scratched": false,
+          "win_odds": 44.7,
+          "popularity": 12
+        },
+        {
+          "umaban": 3,
+          "bamei": "ライトオブジアース",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 7.1,
+          "popularity": 3
+        },
+        {
+          "umaban": 4,
+          "bamei": "ノブピースオブラブ",
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 102.8,
+          "popularity": 14
+        },
+        {
+          "umaban": 5,
+          "bamei": "ソワンドヴィクター",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 17.4,
+          "popularity": 6
+        },
+        {
+          "umaban": 6,
+          "bamei": "マリノリュミエール",
           "finish": 9,
           "scratched": false,
-          "win_odds": 42.7,
-          "popularity": 12
+          "win_odds": 10.2,
+          "popularity": 4
         },
         {
           "umaban": 7,
           "bamei": "スカイプレリュード",
-          "finish": 14,
+          "finish": 13,
           "scratched": false,
-          "win_odds": 144.1,
+          "win_odds": 158.9,
           "popularity": 16
         },
         {
           "umaban": 8,
           "bamei": "アウェイクネス",
-          "finish": 15,
+          "finish": 6,
           "scratched": false,
-          "win_odds": 120.4,
+          "win_odds": 110.7,
           "popularity": 15
         },
         {
-          "umaban": 11,
-          "bamei": "リアライズブルーム",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 26.7,
-          "popularity": 8
-        },
-        {
-          "umaban": 13,
-          "bamei": "ジューンマロン",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 98.1,
-          "popularity": 13
-        }
-      ]
-    },
-    {
-      "rkey": "202602011207",
-      "num_runners": 14,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 6,
-          "bamei": "ビーチイン",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 4.7,
-          "popularity": 3
-        },
-        {
-          "umaban": 3,
-          "bamei": "ゴールドヴィーナス",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 13.5,
-          "popularity": 6
-        },
-        {
           "umaban": 9,
-          "bamei": "ミリオンアップ",
-          "finish": 11,
+          "bamei": "リネアベルタ",
+          "finish": 2,
           "scratched": false,
-          "win_odds": 40.9,
-          "popularity": 8
-        },
-        {
-          "umaban": 14,
-          "bamei": "ヴァレンティーニ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 4.9,
-          "popularity": 2
-        },
-        {
-          "umaban": 4,
-          "bamei": "プリンセスアツコ",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 3.5,
-          "popularity": 1
+          "win_odds": 14.0,
+          "popularity": 5
         },
         {
           "umaban": 10,
-          "bamei": "ゴールドドレッサ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 23.9,
-          "popularity": 7
-        },
-        {
-          "umaban": 5,
-          "bamei": "ブーケドグレイス",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 88.0,
-          "popularity": 11
-        },
-        {
-          "umaban": 12,
-          "bamei": "リピース",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 8.1,
-          "popularity": 5
-        },
-        {
-          "umaban": 7,
-          "bamei": "ジーティーアリア",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 6.1,
-          "popularity": 4
-        },
-        {
-          "umaban": 11,
-          "bamei": "ストラニエーロ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 49.5,
-          "popularity": 9
-        },
-        {
-          "umaban": 8,
-          "bamei": "クッカユフラ",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 89.5,
-          "popularity": 10
-        },
-        {
-          "umaban": 2,
-          "bamei": "ライラックデューン",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 109.6,
-          "popularity": 13
-        },
-        {
-          "umaban": 1,
-          "bamei": "フェニーチェドーロ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 113.6,
-          "popularity": 12
-        },
-        {
-          "umaban": 13,
-          "bamei": "スタンピー",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 373.2,
-          "popularity": 14
-        }
-      ]
-    },
-    {
-      "rkey": "202602011208",
-      "num_runners": 10,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 4,
-          "bamei": "ワイドデコラシオン",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 5.2,
-          "popularity": 2
-        },
-        {
-          "umaban": 6,
-          "bamei": "キャンドルマス",
+          "bamei": "マメーアップル",
           "finish": 3,
-          "scratched": false,
-          "win_odds": 7.3,
-          "popularity": 3
-        },
-        {
-          "umaban": 8,
-          "bamei": "フレンズプラス",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 7.5,
-          "popularity": 5
-        },
-        {
-          "umaban": 1,
-          "bamei": "レストプレドゥモア",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 9.5,
-          "popularity": 6
-        },
-        {
-          "umaban": 3,
-          "bamei": "イングラム",
-          "finish": 1,
           "scratched": false,
           "win_odds": 2.8,
           "popularity": 1
         },
         {
-          "umaban": 5,
-          "bamei": "グレイトソン",
-          "finish": 4,
+          "umaban": 11,
+          "bamei": "リアライズブルーム",
+          "finish": 11,
           "scratched": false,
-          "win_odds": 6.9,
-          "popularity": 3
-        },
-        {
-          "umaban": 10,
-          "bamei": "タイセイモノリス",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 22.3,
-          "popularity": 7
-        },
-        {
-          "umaban": 9,
-          "bamei": "メイショウハッブル",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 25.1,
+          "win_odds": 25.0,
           "popularity": 8
         },
         {
-          "umaban": 7,
-          "bamei": "グッバイウェーブ",
-          "finish": 9,
+          "umaban": 12,
+          "bamei": "クープグラッセ",
+          "finish": 7,
           "scratched": false,
-          "win_odds": 37.0,
+          "win_odds": 19.8,
+          "popularity": 7
+        },
+        {
+          "umaban": 13,
+          "bamei": "ジューンマロン",
+          "finish": 16,
+          "scratched": false,
+          "win_odds": 97.8,
+          "popularity": 13
+        },
+        {
+          "umaban": 14,
+          "bamei": "トゥルージョワ",
+          "finish": 14,
+          "scratched": false,
+          "win_odds": 30.0,
+          "popularity": 10
+        },
+        {
+          "umaban": 15,
+          "bamei": "チェサピークベイ",
+          "finish": 15,
+          "scratched": false,
+          "win_odds": 40.5,
+          "popularity": 11
+        },
+        {
+          "umaban": 16,
+          "bamei": "ディサイドオンミー",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 28.9,
           "popularity": 9
+        }
+      ]
+    },
+    {
+      "rkey": "202602011207",
+      "num_runners": 0,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "フェニーチェドーロ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 2,
+          "bamei": "ライラックデューン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "ゴールドヴィーナス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "プリンセスアツコ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "ブーケドグレイス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ビーチイン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ジーティーアリア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "クッカユフラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "ミリオンアップ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "ゴールドドレッサ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "ストラニエーロ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "リピース",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "スタンピー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "ヴァレンティーニ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        }
+      ]
+    },
+    {
+      "rkey": "202602011208",
+      "num_runners": 0,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "レストプレドゥモア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "プレザントトーン",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 159.9,
-          "popularity": 10
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "イングラム",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "ワイドデコラシオン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "グレイトソン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "キャンドルマス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "グッバイウェーブ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "フレンズプラス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "メイショウハッブル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "タイセイモノリス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202602011209",
-      "num_runners": 13,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
         {
-          "umaban": 9,
-          "bamei": "モンローウォーク",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 1.6,
-          "popularity": 1
+          "umaban": 1,
+          "bamei": "レーヴドロペラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "マイスターヴェルク",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 7.5,
-          "popularity": 3
-        },
-        {
-          "umaban": 1,
-          "bamei": "レーヴドロペラ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 19.7,
-          "popularity": 5
-        },
-        {
-          "umaban": 4,
-          "bamei": "アストリル",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 5.2,
-          "popularity": 2
-        },
-        {
-          "umaban": 10,
-          "bamei": "マドモアゼルアスク",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 34.4,
-          "popularity": 7
-        },
-        {
-          "umaban": 6,
-          "bamei": "ロートホルン",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 12.5,
-          "popularity": 4
-        },
-        {
-          "umaban": 8,
-          "bamei": "ハートメテオ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 44.6,
-          "popularity": 8
-        },
-        {
-          "umaban": 7,
-          "bamei": "マルカオペラ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 33.7,
-          "popularity": 6
-        },
-        {
-          "umaban": 13,
-          "bamei": "トレミニョン",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 64.5,
-          "popularity": 10
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 3,
           "bamei": "ハニードレス",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 49.4,
-          "popularity": 9
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 11,
-          "bamei": "エーデル",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 166.3,
-          "popularity": 11
+          "umaban": 4,
+          "bamei": "アストリル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 5,
           "bamei": "タイヨウフレア",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 345.1,
-          "popularity": 12
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ロートホルン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "マルカオペラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "ハートメテオ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "モンローウォーク",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "マドモアゼルアスク",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "エーデル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 12,
           "bamei": "エリム",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 565.5,
-          "popularity": 13
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "トレミニョン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202602011210",
-      "num_runners": 14,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
         {
           "umaban": 1,
           "bamei": "ウインシャーガス",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 6.0,
-          "popularity": 3
-        },
-        {
-          "umaban": 14,
-          "bamei": "プライベートアイズ",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 9.7,
-          "popularity": 4
-        },
-        {
-          "umaban": 9,
-          "bamei": "シーズザスローン",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 4.8,
-          "popularity": 2
-        },
-        {
-          "umaban": 12,
-          "bamei": "タガノエルー",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 1.9,
-          "popularity": 1
-        },
-        {
-          "umaban": 3,
-          "bamei": "テルアスワッド",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 53.5,
-          "popularity": 9
-        },
-        {
-          "umaban": 4,
-          "bamei": "ルージュマローネ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 53.1,
-          "popularity": 8
-        },
-        {
-          "umaban": 11,
-          "bamei": "メイショウタイピン",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 28.5,
-          "popularity": 7
-        },
-        {
-          "umaban": 8,
-          "bamei": "マーウォルス",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 80.6,
-          "popularity": 10
-        },
-        {
-          "umaban": 7,
-          "bamei": "ジュンラトゥール",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 28.6,
-          "popularity": 6
-        },
-        {
-          "umaban": 5,
-          "bamei": "キングベルベット",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 16.7,
-          "popularity": 5
-        },
-        {
-          "umaban": 6,
-          "bamei": "レイザリオ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 114.5,
-          "popularity": 12
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "ヤコブセン",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 243.4,
-          "popularity": 13
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "テルアスワッド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "ルージュマローネ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "キングベルベット",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "レイザリオ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ジュンラトゥール",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "マーウォルス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "シーズザスローン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 10,
           "bamei": "マンダリンボレロ",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 87.2,
-          "popularity": 11
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "メイショウタイピン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "タガノエルー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 13,
           "bamei": "フォーワンセルフ",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 398.1,
-          "popularity": 14
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "プライベートアイズ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202602011211",
-      "num_runners": 13,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
         {
-          "umaban": 11,
-          "bamei": "シグレ",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 3.3,
-          "popularity": 1
-        },
-        {
-          "umaban": 7,
-          "bamei": "ショウナンカノア",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 13.6,
-          "popularity": 6
-        },
-        {
-          "umaban": 9,
-          "bamei": "イモージェン",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 3.9,
-          "popularity": 2
-        },
-        {
-          "umaban": 5,
-          "bamei": "フェリチタ",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 33.4,
-          "popularity": 10
-        },
-        {
-          "umaban": 13,
-          "bamei": "ロンドンガーズ",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 5.0,
-          "popularity": 3
-        },
-        {
-          "umaban": 8,
-          "bamei": "クロリス",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 41.1,
-          "popularity": 11
-        },
-        {
-          "umaban": 4,
-          "bamei": "アルテクィーン",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 21.9,
-          "popularity": 9
-        },
-        {
-          "umaban": 10,
-          "bamei": "ノリヤンモーニン",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 12.5,
-          "popularity": 5
+          "umaban": 1,
+          "bamei": "ダマスク",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "ダイシンドラゴン",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 20.2,
-          "popularity": 8
-        },
-        {
-          "umaban": 12,
-          "bamei": "ダイメイビッグボス",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 9.0,
-          "popularity": 4
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 3,
           "bamei": "セタキト",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 15.5,
-          "popularity": 7
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 1,
-          "bamei": "ダマスク",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 65.4,
-          "popularity": 12
+          "umaban": 4,
+          "bamei": "アルテクィーン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "フェリチタ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 6,
           "bamei": "ウンスイ",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 89.1,
-          "popularity": 13
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ショウナンカノア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "クロリス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "イモージェン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "ノリヤンモーニン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "シグレ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ダイメイビッグボス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "ロンドンガーズ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202602011212",
-      "num_runners": 14,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
         {
-          "umaban": 3,
-          "bamei": "マグネシアブリック",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 7.1,
-          "popularity": 4
+          "umaban": 1,
+          "bamei": "ザカリナン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "コモンスナイプ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 10.2,
-          "popularity": 5
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "マグネシアブリック",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 4,
           "bamei": "ホウオウヘッセン",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 3.8,
-          "popularity": 1
-        },
-        {
-          "umaban": 12,
-          "bamei": "ソードマスター",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 11.8,
-          "popularity": 6
-        },
-        {
-          "umaban": 1,
-          "bamei": "ザカリナン",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 5.6,
-          "popularity": 3
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 5,
           "bamei": "ロードクラシコ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 4.6,
-          "popularity": 2
-        },
-        {
-          "umaban": 8,
-          "bamei": "ロードヴェルテクス",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 36.0,
-          "popularity": 10
-        },
-        {
-          "umaban": 13,
-          "bamei": "アヤサンジョリーン",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 48.1,
-          "popularity": 11
-        },
-        {
-          "umaban": 9,
-          "bamei": "シャインズオンユー",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 17.7,
-          "popularity": 8
-        },
-        {
-          "umaban": 14,
-          "bamei": "ルクスアドラー",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 27.8,
-          "popularity": 9
-        },
-        {
-          "umaban": 7,
-          "bamei": "ミスターバッドガイ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 15.7,
-          "popularity": 7
-        },
-        {
-          "umaban": 10,
-          "bamei": "マイオウンウェイ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 64.6,
-          "popularity": 13
-        },
-        {
-          "umaban": 11,
-          "bamei": "フレンドモナコ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 61.2,
-          "popularity": 12
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 6,
           "bamei": "ブラヴィーノ",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 85.9,
-          "popularity": 14
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ミスターバッドガイ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "ロードヴェルテクス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "シャインズオンユー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "マイオウンウェイ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "フレンドモナコ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ソードマスター",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "アヤサンジョリーン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "ルクスアドラー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202603020801",
       "num_runners": 10,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
         {
           "umaban": 1,
@@ -1338,523 +1313,507 @@
           "popularity": 1
         },
         {
-          "umaban": 6,
-          "bamei": "ドナビッグベン",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 34.9,
-          "popularity": 5
-        },
-        {
           "umaban": 2,
           "bamei": "ケンシロウワールド",
-          "finish": 5,
+          "finish": 9,
           "scratched": false,
-          "win_odds": 12.7,
+          "win_odds": 10.8,
           "popularity": 3
         },
         {
           "umaban": 3,
           "bamei": "スウィット",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 31.1,
+          "popularity": 4
+        },
+        {
+          "umaban": 4,
+          "bamei": "トムキャット",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 89.9,
+          "popularity": 6
+        },
+        {
+          "umaban": 5,
+          "bamei": "リケアチャチャチャ",
           "finish": 4,
           "scratched": false,
-          "win_odds": 35.6,
-          "popularity": 4
+          "win_odds": 271.1,
+          "popularity": 9
+        },
+        {
+          "umaban": 6,
+          "bamei": "ドナビッグベン",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 34.2,
+          "popularity": 5
+        },
+        {
+          "umaban": 7,
+          "bamei": "ウカテンセイ",
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 368.3,
+          "popularity": 10
+        },
+        {
+          "umaban": 8,
+          "bamei": "ココニイルヨ",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 205.6,
+          "popularity": 8
+        },
+        {
+          "umaban": 9,
+          "bamei": "レオライジング",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 178.7,
+          "popularity": 7
         },
         {
           "umaban": 10,
           "bamei": "ユイノキャッツアイ",
           "finish": 3,
           "scratched": false,
-          "win_odds": 5.0,
+          "win_odds": 4.9,
           "popularity": 2
-        },
-        {
-          "umaban": 4,
-          "bamei": "トムキャット",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 100.5,
-          "popularity": 6
-        },
-        {
-          "umaban": 5,
-          "bamei": "リケアチャチャチャ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 308.8,
-          "popularity": 9
-        },
-        {
-          "umaban": 8,
-          "bamei": "ココニイルヨ",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 224.4,
-          "popularity": 8
-        },
-        {
-          "umaban": 7,
-          "bamei": "ウカテンセイ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 376.7,
-          "popularity": 10
-        },
-        {
-          "umaban": 9,
-          "bamei": "レオライジング",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 212.8,
-          "popularity": 7
         }
       ]
     },
     {
       "rkey": "202603020802",
       "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
         {
-          "umaban": 8,
-          "bamei": "サトノスターライト",
-          "finish": 5,
+          "umaban": 1,
+          "bamei": "ジェイエルグリーン",
+          "finish": 6,
           "scratched": false,
-          "win_odds": 7.5,
-          "popularity": 5
+          "win_odds": 137.3,
+          "popularity": 13
         },
         {
           "umaban": 2,
           "bamei": "ジャストビコーズ",
-          "finish": 6,
+          "finish": 9,
           "scratched": false,
-          "win_odds": 5.2,
+          "win_odds": 4.5,
           "popularity": 3
+        },
+        {
+          "umaban": 3,
+          "bamei": "ダイナマイトメロン",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 113.9,
+          "popularity": 11
+        },
+        {
+          "umaban": 4,
+          "bamei": "ルビーサンセット",
+          "finish": 14,
+          "scratched": false,
+          "win_odds": 356.3,
+          "popularity": 16
+        },
+        {
+          "umaban": 5,
+          "bamei": "フジサン",
+          "finish": 4,
+          "scratched": false,
+          "win_odds": 28.2,
+          "popularity": 9
+        },
+        {
+          "umaban": 6,
+          "bamei": "グレイスルーラー",
+          "finish": 11,
+          "scratched": false,
+          "win_odds": 27.6,
+          "popularity": 8
+        },
+        {
+          "umaban": 7,
+          "bamei": "キリスパークル",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 115.0,
+          "popularity": 12
+        },
+        {
+          "umaban": 8,
+          "bamei": "サトノスターライト",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 7.3,
+          "popularity": 5
+        },
+        {
+          "umaban": 9,
+          "bamei": "アオゾラランチ",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 99.9,
+          "popularity": 10
+        },
+        {
+          "umaban": 10,
+          "bamei": "ロジタイガー",
+          "finish": 15,
+          "scratched": false,
+          "win_odds": 230.2,
+          "popularity": 14
+        },
+        {
+          "umaban": 11,
+          "bamei": "ジャストマイウェイ",
+          "finish": 13,
+          "scratched": false,
+          "win_odds": 24.0,
+          "popularity": 7
+        },
+        {
+          "umaban": 12,
+          "bamei": "チョコスコーン",
+          "finish": 16,
+          "scratched": false,
+          "win_odds": 334.7,
+          "popularity": 15
+        },
+        {
+          "umaban": 13,
+          "bamei": "アマンヘセル",
+          "finish": 3,
+          "scratched": false,
+          "win_odds": 22.0,
+          "popularity": 6
+        },
+        {
+          "umaban": 14,
+          "bamei": "ピースフルマインド",
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 4.1,
+          "popularity": 2
         },
         {
           "umaban": 15,
           "bamei": "クリスタルドレス",
           "finish": 2,
           "scratched": false,
-          "win_odds": 6.5,
+          "win_odds": 6.0,
           "popularity": 4
         },
         {
           "umaban": 16,
           "bamei": "クレアノア",
-          "finish": 3,
+          "finish": 1,
           "scratched": false,
           "win_odds": 3.4,
           "popularity": 1
-        },
-        {
-          "umaban": 14,
-          "bamei": "ピースフルマインド",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 4.4,
-          "popularity": 2
-        },
-        {
-          "umaban": 5,
-          "bamei": "フジサン",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 30.1,
-          "popularity": 9
-        },
-        {
-          "umaban": 6,
-          "bamei": "グレイスルーラー",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 26.5,
-          "popularity": 8
-        },
-        {
-          "umaban": 11,
-          "bamei": "ジャストマイウェイ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 24.3,
-          "popularity": 7
-        },
-        {
-          "umaban": 13,
-          "bamei": "アマンヘセル",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 24.6,
-          "popularity": 6
-        },
-        {
-          "umaban": 7,
-          "bamei": "キリスパークル",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 125.8,
-          "popularity": 12
-        },
-        {
-          "umaban": 9,
-          "bamei": "アオゾラランチ",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 97.5,
-          "popularity": 10
-        },
-        {
-          "umaban": 10,
-          "bamei": "ロジタイガー",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 265.3,
-          "popularity": 14
-        },
-        {
-          "umaban": 1,
-          "bamei": "ジェイエルグリーン",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 152.6,
-          "popularity": 13
-        },
-        {
-          "umaban": 3,
-          "bamei": "ダイナマイトメロン",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 128.5,
-          "popularity": 11
-        },
-        {
-          "umaban": 4,
-          "bamei": "ルビーサンセット",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 401.5,
-          "popularity": 16
-        },
-        {
-          "umaban": 12,
-          "bamei": "チョコスコーン",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 324.7,
-          "popularity": 15
         }
       ]
     },
     {
       "rkey": "202603020803",
       "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
         {
-          "umaban": 8,
-          "bamei": "ペプチドドリーム",
-          "finish": 2,
+          "umaban": 1,
+          "bamei": "アロハオエ",
+          "finish": 13,
           "scratched": false,
-          "win_odds": 2.0,
-          "popularity": 1
+          "win_odds": 412.6,
+          "popularity": 14
         },
         {
-          "umaban": 6,
-          "bamei": "グランマエストロ",
+          "umaban": 2,
+          "bamei": "ラクシオンデクラ",
+          "finish": 3,
+          "scratched": false,
+          "win_odds": 156.3,
+          "popularity": 11
+        },
+        {
+          "umaban": 3,
+          "bamei": "カタカムナ",
           "finish": 6,
           "scratched": false,
-          "win_odds": 5.7,
-          "popularity": 3
-        },
-        {
-          "umaban": 14,
-          "bamei": "シャルムグリーン",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 4.4,
-          "popularity": 2
-        },
-        {
-          "umaban": 16,
-          "bamei": "ブラーヴジャン",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 10.3,
-          "popularity": 5
-        },
-        {
-          "umaban": 9,
-          "bamei": "シルバーゴールド",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 20.9,
-          "popularity": 7
+          "win_odds": 313.5,
+          "popularity": 13
         },
         {
           "umaban": 4,
           "bamei": "ランウェイミューズ",
-          "finish": 3,
+          "finish": 4,
           "scratched": false,
-          "win_odds": 9.8,
+          "win_odds": 10.8,
           "popularity": 4
-        },
-        {
-          "umaban": 7,
-          "bamei": "チャチャット",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 59.1,
-          "popularity": 8
         },
         {
           "umaban": 5,
           "bamei": "ルージュラベル",
           "finish": 10,
           "scratched": false,
-          "win_odds": 145.7,
+          "win_odds": 140.4,
           "popularity": 10
         },
         {
-          "umaban": 13,
-          "bamei": "ベルランコントル",
+          "umaban": 6,
+          "bamei": "グランマエストロ",
           "finish": 8,
           "scratched": false,
-          "win_odds": 18.5,
-          "popularity": 6
+          "win_odds": 5.5,
+          "popularity": 3
+        },
+        {
+          "umaban": 7,
+          "bamei": "チャチャット",
+          "finish": 16,
+          "scratched": false,
+          "win_odds": 63.0,
+          "popularity": 8
+        },
+        {
+          "umaban": 8,
+          "bamei": "ペプチドドリーム",
+          "finish": 1,
+          "scratched": false,
+          "win_odds": 1.9,
+          "popularity": 1
+        },
+        {
+          "umaban": 9,
+          "bamei": "シルバーゴールド",
+          "finish": 11,
+          "scratched": false,
+          "win_odds": 22.5,
+          "popularity": 7
         },
         {
           "umaban": 10,
           "bamei": "レッドフリーマン",
-          "finish": 7,
+          "finish": 9,
           "scratched": false,
-          "win_odds": 81.2,
+          "win_odds": 88.8,
           "popularity": 9
-        },
-        {
-          "umaban": 15,
-          "bamei": "ボールドフロント",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 501.6,
-          "popularity": 15
-        },
-        {
-          "umaban": 12,
-          "bamei": "ルアグロール",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 181.3,
-          "popularity": 12
-        },
-        {
-          "umaban": 2,
-          "bamei": "ラクシオンデクラ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 148.2,
-          "popularity": 11
-        },
-        {
-          "umaban": 1,
-          "bamei": "アロハオエ",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 461.2,
-          "popularity": 14
-        },
-        {
-          "umaban": 3,
-          "bamei": "カタカムナ",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 313.0,
-          "popularity": 13
         },
         {
           "umaban": 11,
           "bamei": "カキュウ",
-          "finish": 16,
+          "finish": 12,
           "scratched": false,
-          "win_odds": 727.2,
+          "win_odds": 699.7,
           "popularity": 16
+        },
+        {
+          "umaban": 12,
+          "bamei": "ルアグロール",
+          "finish": 14,
+          "scratched": false,
+          "win_odds": 188.9,
+          "popularity": 12
+        },
+        {
+          "umaban": 13,
+          "bamei": "ベルランコントル",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 19.2,
+          "popularity": 6
+        },
+        {
+          "umaban": 14,
+          "bamei": "シャルムグリーン",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 4.6,
+          "popularity": 2
+        },
+        {
+          "umaban": 15,
+          "bamei": "ボールドフロント",
+          "finish": 15,
+          "scratched": false,
+          "win_odds": 442.3,
+          "popularity": 15
+        },
+        {
+          "umaban": 16,
+          "bamei": "ブラーヴジャン",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 10.9,
+          "popularity": 5
         }
       ]
     },
     {
       "rkey": "202603020804",
       "num_runners": 15,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
+        {
+          "umaban": 1,
+          "bamei": "ヤマニンルーバス",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 116.5,
+          "popularity": 12
+        },
+        {
+          "umaban": 2,
+          "bamei": "アーティラリー",
+          "finish": 1,
+          "scratched": false,
+          "win_odds": 9.7,
+          "popularity": 6
+        },
         {
           "umaban": 3,
           "bamei": "フェスティヴハート",
-          "finish": 2,
+          "finish": 9,
           "scratched": false,
-          "win_odds": 3.5,
+          "win_odds": 3.2,
           "popularity": 1
+        },
+        {
+          "umaban": 4,
+          "bamei": "トラストレガート",
+          "finish": 4,
+          "scratched": false,
+          "win_odds": 36.7,
+          "popularity": 10
         },
         {
           "umaban": 5,
           "bamei": "デルマザオウ",
-          "finish": 8,
+          "finish": 2,
           "scratched": false,
-          "win_odds": 8.0,
+          "win_odds": 7.4,
           "popularity": 4
+        },
+        {
+          "umaban": 6,
+          "bamei": "カムオンオーバー",
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 62.4,
+          "popularity": 11
+        },
+        {
+          "umaban": 7,
+          "bamei": "ペタルズダンス",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 8.1,
+          "popularity": 5
+        },
+        {
+          "umaban": 8,
+          "bamei": "ランランリンリン",
+          "finish": 14,
+          "scratched": false,
+          "win_odds": 189.0,
+          "popularity": 13
         },
         {
           "umaban": 9,
           "bamei": "ユニバーサルラヴ",
-          "finish": 7,
+          "finish": 3,
           "scratched": false,
           "win_odds": 4.6,
           "popularity": 2
         },
         {
-          "umaban": 7,
-          "bamei": "ペタルズダンス",
-          "finish": 1,
+          "umaban": 10,
+          "bamei": "ハピネスドリーム",
+          "finish": 8,
           "scratched": false,
-          "win_odds": 9.0,
-          "popularity": 5
-        },
-        {
-          "umaban": 2,
-          "bamei": "アーティラリー",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 10.4,
-          "popularity": 6
-        },
-        {
-          "umaban": 4,
-          "bamei": "トラストレガート",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 37.1,
-          "popularity": 10
+          "win_odds": 34.1,
+          "popularity": 9
         },
         {
           "umaban": 11,
           "bamei": "ハリコミチュウ",
-          "finish": 6,
+          "finish": 13,
           "scratched": false,
-          "win_odds": 5.4,
+          "win_odds": 5.0,
           "popularity": 3
-        },
-        {
-          "umaban": 13,
-          "bamei": "アルティソナンテ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 23.9,
-          "popularity": 7
-        },
-        {
-          "umaban": 6,
-          "bamei": "カムオンオーバー",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 57.2,
-          "popularity": 11
-        },
-        {
-          "umaban": 14,
-          "bamei": "マッドヘッドラブ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 219.4,
-          "popularity": 14
-        },
-        {
-          "umaban": 15,
-          "bamei": "ジーティーヒラリ",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 37.1,
-          "popularity": 8
-        },
-        {
-          "umaban": 8,
-          "bamei": "ランランリンリン",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 194.3,
-          "popularity": 13
         },
         {
           "umaban": 12,
           "bamei": "ウィッシュリスト",
           "finish": 15,
           "scratched": false,
-          "win_odds": 381.5,
+          "win_odds": 330.8,
           "popularity": 15
         },
         {
-          "umaban": 1,
-          "bamei": "ヤマニンルーバス",
-          "finish": 10,
+          "umaban": 13,
+          "bamei": "アルティソナンテ",
+          "finish": 5,
           "scratched": false,
-          "win_odds": 130.0,
-          "popularity": 12
+          "win_odds": 21.8,
+          "popularity": 7
         },
         {
-          "umaban": 10,
-          "bamei": "ハピネスドリーム",
+          "umaban": 14,
+          "bamei": "マッドヘッドラブ",
           "finish": 11,
           "scratched": false,
-          "win_odds": 36.2,
-          "popularity": 9
+          "win_odds": 195.0,
+          "popularity": 14
+        },
+        {
+          "umaban": 15,
+          "bamei": "ジーティーヒラリ",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 32.3,
+          "popularity": 8
         }
       ]
     },
     {
       "rkey": "202603020805",
       "num_runners": 13,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
         {
-          "umaban": 9,
-          "bamei": "ヴェルバーニア",
-          "finish": 1,
+          "umaban": 1,
+          "bamei": "マイホームパパ",
+          "finish": 6,
           "scratched": false,
-          "win_odds": 3.5,
-          "popularity": 2
-        },
-        {
-          "umaban": 11,
-          "bamei": "エンルートフライト",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 13.8,
-          "popularity": 4
-        },
-        {
-          "umaban": 6,
-          "bamei": "マハロハ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 10.6,
-          "popularity": 3
+          "win_odds": 73.9,
+          "popularity": 9
         },
         {
           "umaban": 2,
           "bamei": "サンタンヌ",
-          "finish": 6,
+          "finish": 5,
           "scratched": false,
-          "win_odds": 16.2,
+          "win_odds": 17.8,
           "popularity": 5
+        },
+        {
+          "umaban": 3,
+          "bamei": "ムーチョピカンテ",
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 198.6,
+          "popularity": 12
         },
         {
           "umaban": 4,
           "bamei": "グランオギュール",
-          "finish": 3,
+          "finish": 1,
           "scratched": false,
-          "win_odds": 1.9,
+          "win_odds": 1.7,
           "popularity": 1
         },
         {
@@ -1862,2264 +1821,2244 @@
           "bamei": "ロワデュモンド",
           "finish": 4,
           "scratched": false,
-          "win_odds": 20.3,
+          "win_odds": 18.8,
           "popularity": 6
         },
         {
-          "umaban": 13,
-          "bamei": "ラヴァレード",
-          "finish": 8,
+          "umaban": 6,
+          "bamei": "マハロハ",
+          "finish": 7,
           "scratched": false,
-          "win_odds": 170.0,
-          "popularity": 11
+          "win_odds": 9.5,
+          "popularity": 3
         },
         {
           "umaban": 7,
           "bamei": "コスモフラムオット",
-          "finish": 7,
+          "finish": 8,
           "scratched": false,
-          "win_odds": 28.9,
+          "win_odds": 24.9,
           "popularity": 7
-        },
-        {
-          "umaban": 1,
-          "bamei": "マイホームパパ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 69.4,
-          "popularity": 9
-        },
-        {
-          "umaban": 10,
-          "bamei": "アズールドーン",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 67.1,
-          "popularity": 8
-        },
-        {
-          "umaban": 3,
-          "bamei": "ムーチョピカンテ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 209.1,
-          "popularity": 12
         },
         {
           "umaban": 8,
           "bamei": "カウェーカネム",
-          "finish": 11,
+          "finish": 13,
           "scratched": false,
-          "win_odds": 125.7,
+          "win_odds": 113.2,
           "popularity": 10
+        },
+        {
+          "umaban": 9,
+          "bamei": "ヴェルバーニア",
+          "finish": 3,
+          "scratched": false,
+          "win_odds": 3.5,
+          "popularity": 2
+        },
+        {
+          "umaban": 10,
+          "bamei": "アズールドーン",
+          "finish": 9,
+          "scratched": false,
+          "win_odds": 60.0,
+          "popularity": 8
+        },
+        {
+          "umaban": 11,
+          "bamei": "エンルートフライト",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 12.3,
+          "popularity": 4
         },
         {
           "umaban": 12,
           "bamei": "ナムラダックス",
-          "finish": 13,
+          "finish": 11,
           "scratched": false,
-          "win_odds": 297.2,
+          "win_odds": 279.0,
           "popularity": 13
+        },
+        {
+          "umaban": 13,
+          "bamei": "ラヴァレード",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 180.2,
+          "popularity": 11
         }
       ]
     },
     {
       "rkey": "202603020806",
-      "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
         {
-          "umaban": 14,
-          "bamei": "チャランダマルツ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 2.8,
-          "popularity": 1
+          "umaban": 1,
+          "bamei": "エリンヘラクレス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "トランサルピナ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 2.7,
-          "popularity": 2
-        },
-        {
-          "umaban": 11,
-          "bamei": "ヴァンデエス",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 68.7,
-          "popularity": 14
-        },
-        {
-          "umaban": 13,
-          "bamei": "アイアムキレマスネ",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 57.8,
-          "popularity": 10
-        },
-        {
-          "umaban": 6,
-          "bamei": "グルーヴェンス",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 6.8,
-          "popularity": 3
-        },
-        {
-          "umaban": 5,
-          "bamei": "クールボビー",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 40.1,
-          "popularity": 8
-        },
-        {
-          "umaban": 10,
-          "bamei": "セイウンイーリス",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 24.5,
-          "popularity": 6
-        },
-        {
-          "umaban": 16,
-          "bamei": "アルニタク",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 11.1,
-          "popularity": 4
-        },
-        {
-          "umaban": 7,
-          "bamei": "ミラクルオーラ",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 59.6,
-          "popularity": 12
-        },
-        {
-          "umaban": 1,
-          "bamei": "エリンヘラクレス",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 160.3,
-          "popularity": 16
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 3,
           "bamei": "セイウンリリーナ",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 38.6,
-          "popularity": 7
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 4,
           "bamei": "ドリームユー",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 50.7,
-          "popularity": 11
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 12,
-          "bamei": "ドナチャージ",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 22.6,
-          "popularity": 5
+          "umaban": 5,
+          "bamei": "クールボビー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "グルーヴェンス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ミラクルオーラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 8,
           "bamei": "ヴィンチェローズ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 70.2,
-          "popularity": 13
-        },
-        {
-          "umaban": 15,
-          "bamei": "コスモルトチェコ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 121.7,
-          "popularity": 15
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 9,
           "bamei": "キミヘノメロディー",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 57.0,
-          "popularity": 9
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "セイウンイーリス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "ヴァンデエス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ドナチャージ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "アイアムキレマスネ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "チャランダマルツ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "コスモルトチェコ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 16,
+          "bamei": "アルニタク",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202603020807",
-      "num_runners": 15,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
         {
-          "umaban": 4,
-          "bamei": "イントゥザウインド",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 2.6,
-          "popularity": 2
-        },
-        {
-          "umaban": 5,
-          "bamei": "キタノドンカルロ",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 5.3,
-          "popularity": 3
-        },
-        {
-          "umaban": 3,
-          "bamei": "チェイサー",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 2.5,
-          "popularity": 1
-        },
-        {
-          "umaban": 13,
-          "bamei": "ファイアリービート",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 9.7,
-          "popularity": 4
-        },
-        {
-          "umaban": 8,
-          "bamei": "ジュングロワール",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 38.7,
-          "popularity": 8
-        },
-        {
-          "umaban": 9,
-          "bamei": "ファナティカル",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 15.8,
-          "popularity": 5
-        },
-        {
-          "umaban": 7,
-          "bamei": "ユイノサダハル",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 16.1,
-          "popularity": 6
-        },
-        {
-          "umaban": 14,
-          "bamei": "スルーザゴールド",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 96.7,
-          "popularity": 9
-        },
-        {
-          "umaban": 12,
-          "bamei": "マイトリックスター",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 162.1,
-          "popularity": 11
-        },
-        {
-          "umaban": 6,
-          "bamei": "ラヴィプランドール",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 119.5,
-          "popularity": 10
-        },
-        {
-          "umaban": 10,
-          "bamei": "パワポケグッド",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 342.5,
-          "popularity": 13
-        },
-        {
-          "umaban": 11,
-          "bamei": "リアルパラダイス",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 256.5,
-          "popularity": 12
-        },
-        {
-          "umaban": 15,
-          "bamei": "テキサスバローズ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 24.7,
-          "popularity": 7
+          "umaban": 1,
+          "bamei": "ライヴギムレット",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "サイモングリーマン",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 480.4,
-          "popularity": 15
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 1,
-          "bamei": "ライヴギムレット",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 409.8,
-          "popularity": 14
+          "umaban": 3,
+          "bamei": "チェイサー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "イントゥザウインド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "キタノドンカルロ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ラヴィプランドール",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ユイノサダハル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "ジュングロワール",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "ファナティカル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "パワポケグッド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "リアルパラダイス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "マイトリックスター",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "ファイアリービート",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "スルーザゴールド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "テキサスバローズ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202603020808",
-      "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
         {
-          "umaban": 12,
-          "bamei": "ミエノストロング",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 10.3,
-          "popularity": 6
+          "umaban": 1,
+          "bamei": "クラウンテック",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "ロスパレドネス",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 6.8,
-          "popularity": 3
-        },
-        {
-          "umaban": 8,
-          "bamei": "アメテュストス",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 3.4,
-          "popularity": 1
-        },
-        {
-          "umaban": 16,
-          "bamei": "コスモアチーブ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 34.6,
-          "popularity": 10
-        },
-        {
-          "umaban": 15,
-          "bamei": "トーセンブリラーレ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 5.7,
-          "popularity": 2
-        },
-        {
-          "umaban": 4,
-          "bamei": "ジャグアール",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 40.0,
-          "popularity": 11
-        },
-        {
-          "umaban": 13,
-          "bamei": "ピエナフェーヴル",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 23.0,
-          "popularity": 8
-        },
-        {
-          "umaban": 6,
-          "bamei": "ミッドセンチュリー",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 50.8,
-          "popularity": 12
-        },
-        {
-          "umaban": 5,
-          "bamei": "ポッドロルフ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 32.6,
-          "popularity": 9
-        },
-        {
-          "umaban": 9,
-          "bamei": "モウエエデショー",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 9.0,
-          "popularity": 4
-        },
-        {
-          "umaban": 7,
-          "bamei": "リスレジャンデール",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 7.9,
-          "popularity": 5
-        },
-        {
-          "umaban": 14,
-          "bamei": "コズミックボックス",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 55.2,
-          "popularity": 13
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 3,
           "bamei": "スイートオレンジ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 9.6,
-          "popularity": 7
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 11,
-          "bamei": "アレクレア",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 195.2,
-          "popularity": 14
+          "umaban": 4,
+          "bamei": "ジャグアール",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 1,
-          "bamei": "クラウンテック",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 630.4,
-          "popularity": 15
+          "umaban": 5,
+          "bamei": "ポッドロルフ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ミッドセンチュリー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "リスレジャンデール",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "アメテュストス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "モウエエデショー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 10,
           "bamei": "インヴェスター",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 790.2,
-          "popularity": 16
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "アレクレア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ミエノストロング",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "ピエナフェーヴル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "コズミックボックス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "トーセンブリラーレ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 16,
+          "bamei": "コスモアチーブ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202603020809",
-      "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
-        {
-          "umaban": 3,
-          "bamei": "ヴァンヴィーヴ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 4.3,
-          "popularity": 1
-        },
-        {
-          "umaban": 15,
-          "bamei": "ロードトレゾール",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 9.6,
-          "popularity": 5
-        },
-        {
-          "umaban": 6,
-          "bamei": "ヴェントゥーラ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 6.4,
-          "popularity": 4
-        },
         {
           "umaban": 1,
           "bamei": "ガラベイヤ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 5.6,
-          "popularity": 3
-        },
-        {
-          "umaban": 8,
-          "bamei": "セイウンデセオ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 21.3,
-          "popularity": 6
-        },
-        {
-          "umaban": 12,
-          "bamei": "ルージュブリッツ",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 30.3,
-          "popularity": 9
-        },
-        {
-          "umaban": 13,
-          "bamei": "ハッピーエンジェル",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 4.4,
-          "popularity": 2
-        },
-        {
-          "umaban": 16,
-          "bamei": "クレオズニードル",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 139.2,
-          "popularity": 16
-        },
-        {
-          "umaban": 11,
-          "bamei": "ファビュラススター",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 27.4,
-          "popularity": 8
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "ダンケルド",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 39.1,
-          "popularity": 11
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 10,
-          "bamei": "プリティディーヴァ",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 47.9,
-          "popularity": 12
-        },
-        {
-          "umaban": 7,
-          "bamei": "キョウエイボニータ",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 34.6,
-          "popularity": 10
-        },
-        {
-          "umaban": 9,
-          "bamei": "イグニション",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 73.5,
-          "popularity": 13
+          "umaban": 3,
+          "bamei": "ヴァンヴィーヴ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 4,
           "bamei": "カリーシ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 84.5,
-          "popularity": 14
-        },
-        {
-          "umaban": 14,
-          "bamei": "ポッドデスペア",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 22.6,
-          "popularity": 7
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 5,
           "bamei": "マイネルラッシュ",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 110.3,
-          "popularity": 15
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ヴェントゥーラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "キョウエイボニータ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "セイウンデセオ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "イグニション",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "プリティディーヴァ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "ファビュラススター",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ルージュブリッツ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "ハッピーエンジェル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "ポッドデスペア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "ロードトレゾール",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 16,
+          "bamei": "クレオズニードル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202603020810",
-      "num_runners": 12,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
-        {
-          "umaban": 4,
-          "bamei": "アロンズロッド",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 2.7,
-          "popularity": 1
-        },
-        {
-          "umaban": 7,
-          "bamei": "ルールーリマ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 5.0,
-          "popularity": 2
-        },
-        {
-          "umaban": 6,
-          "bamei": "コスモイシュタル",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 4.7,
-          "popularity": 3
-        },
-        {
-          "umaban": 10,
-          "bamei": "クラヴァンス",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 6.5,
-          "popularity": 4
-        },
-        {
-          "umaban": 9,
-          "bamei": "ヤマニンガラッシア",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 20.9,
-          "popularity": 6
-        },
         {
           "umaban": 1,
           "bamei": "ジェットブレード",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 15.8,
-          "popularity": 5
-        },
-        {
-          "umaban": 8,
-          "bamei": "レッセパッセ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 33.1,
-          "popularity": 8
-        },
-        {
-          "umaban": 12,
-          "bamei": "バードウォッチャー",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 29.2,
-          "popularity": 7
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "ゴーソーファー",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 62.8,
-          "popularity": 10
-        },
-        {
-          "umaban": 5,
-          "bamei": "バセリーナ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 48.5,
-          "popularity": 9
-        },
-        {
-          "umaban": 11,
-          "bamei": "ヨシヒロ",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 103.8,
-          "popularity": 11
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 3,
           "bamei": "ビッグデイメイク",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 204.8,
-          "popularity": 12
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "アロンズロッド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "バセリーナ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "コスモイシュタル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ルールーリマ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "レッセパッセ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "ヤマニンガラッシア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "クラヴァンス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "ヨシヒロ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "バードウォッチャー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202603020811",
-      "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
-        {
-          "umaban": 13,
-          "bamei": "ユキマル",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 5.0,
-          "popularity": 1
-        },
-        {
-          "umaban": 5,
-          "bamei": "エコロアゼル",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 5.4,
-          "popularity": 2
-        },
-        {
-          "umaban": 7,
-          "bamei": "ガビーズシスター",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 6.0,
-          "popularity": 3
-        },
         {
           "umaban": 1,
           "bamei": "メイショウホウレン",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 10.6,
-          "popularity": 5
-        },
-        {
-          "umaban": 11,
-          "bamei": "プレゼンティーア",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 11.3,
-          "popularity": 7
-        },
-        {
-          "umaban": 3,
-          "bamei": "ロードアウォード",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 19.3,
-          "popularity": 9
-        },
-        {
-          "umaban": 8,
-          "bamei": "マニバドラ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 7.3,
-          "popularity": 4
-        },
-        {
-          "umaban": 15,
-          "bamei": "ショウナンアビアス",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 16.0,
-          "popularity": 8
-        },
-        {
-          "umaban": 14,
-          "bamei": "ファムエレガンテ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 12.4,
-          "popularity": 6
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "ジョーローリット",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 38.0,
-          "popularity": 12
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 16,
-          "bamei": "ルディック",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 22.0,
-          "popularity": 10
-        },
-        {
-          "umaban": 10,
-          "bamei": "ゲッティヴィラ",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 74.8,
-          "popularity": 13
-        },
-        {
-          "umaban": 6,
-          "bamei": "ケイアイアニラ",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 102.1,
-          "popularity": 14
-        },
-        {
-          "umaban": 12,
-          "bamei": "グッジョブ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 33.2,
-          "popularity": 11
-        },
-        {
-          "umaban": 9,
-          "bamei": "ジャスパーゴールド",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 102.2,
-          "popularity": 15
+          "umaban": 3,
+          "bamei": "ロードアウォード",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 4,
           "bamei": "カズゴルティス",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 120.7,
-          "popularity": 16
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "エコロアゼル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ケイアイアニラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ガビーズシスター",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "マニバドラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "ジャスパーゴールド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "ゲッティヴィラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "プレゼンティーア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "グッジョブ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "ユキマル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "ファムエレガンテ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "ショウナンアビアス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 16,
+          "bamei": "ルディック",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202603020812",
-      "num_runners": 15,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
-        {
-          "umaban": 11,
-          "bamei": "エアトベーレ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 4.8,
-          "popularity": 1
-        },
-        {
-          "umaban": 6,
-          "bamei": "サムシングニュー",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 11.0,
-          "popularity": 7
-        },
-        {
-          "umaban": 15,
-          "bamei": "ヘルヴェティオス",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 6.0,
-          "popularity": 3
-        },
-        {
-          "umaban": 14,
-          "bamei": "リポジノ",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 17.3,
-          "popularity": 9
-        },
         {
           "umaban": 1,
           "bamei": "アルデキングダム",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 7.2,
-          "popularity": 4
-        },
-        {
-          "umaban": 3,
-          "bamei": "ソナタン",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 10.4,
-          "popularity": 5
-        },
-        {
-          "umaban": 7,
-          "bamei": "イサチルシーキング",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 5.0,
-          "popularity": 2
-        },
-        {
-          "umaban": 13,
-          "bamei": "カイトヴィント",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 35.2,
-          "popularity": 10
-        },
-        {
-          "umaban": 8,
-          "bamei": "スーパーホース",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 80.1,
-          "popularity": 13
-        },
-        {
-          "umaban": 10,
-          "bamei": "ノーウェアマン",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 9.5,
-          "popularity": 6
-        },
-        {
-          "umaban": 4,
-          "bamei": "ジーティーブラック",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 14.6,
-          "popularity": 8
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "メリーサウンド",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 71.8,
-          "popularity": 12
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "ソナタン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "ジーティーブラック",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 5,
           "bamei": "ノアチュロス",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 66.7,
-          "popularity": 11
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 12,
-          "bamei": "ウインドワンピース",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 85.0,
-          "popularity": 14
+          "umaban": 6,
+          "bamei": "サムシングニュー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "イサチルシーキング",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "スーパーホース",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 9,
           "bamei": "キングプロフィット",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 103.7,
-          "popularity": 15
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "ノーウェアマン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "エアトベーレ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ウインドワンピース",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "カイトヴィント",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "リポジノ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "ヘルヴェティオス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202610020802",
       "num_runners": 18,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
         {
-          "umaban": 6,
-          "bamei": "カルロット",
-          "finish": 2,
+          "umaban": 1,
+          "bamei": "トウカイジーク",
+          "finish": 13,
           "scratched": false,
-          "win_odds": 2.0,
-          "popularity": 1
-        },
-        {
-          "umaban": 5,
-          "bamei": "ルナフィオーレ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 5.2,
-          "popularity": 2
-        },
-        {
-          "umaban": 13,
-          "bamei": "ヒッグスボソン",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 15.7,
-          "popularity": 6
+          "win_odds": 13.4,
+          "popularity": 5
         },
         {
           "umaban": 2,
           "bamei": "ハクサンテドリガワ",
-          "finish": 3,
+          "finish": 1,
           "scratched": false,
-          "win_odds": 6.1,
+          "win_odds": 6.0,
           "popularity": 3
-        },
-        {
-          "umaban": 9,
-          "bamei": "ナデシコザクラ",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 42.2,
-          "popularity": 8
-        },
-        {
-          "umaban": 1,
-          "bamei": "トウカイジーク",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 12.4,
-          "popularity": 5
-        },
-        {
-          "umaban": 17,
-          "bamei": "ドゥボヌール",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 38.1,
-          "popularity": 7
         },
         {
           "umaban": 3,
           "bamei": "グレンセロース",
-          "finish": 6,
+          "finish": 2,
           "scratched": false,
-          "win_odds": 11.2,
+          "win_odds": 10.3,
           "popularity": 4
-        },
-        {
-          "umaban": 7,
-          "bamei": "ケイアイブラック",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 79.6,
-          "popularity": 11
-        },
-        {
-          "umaban": 14,
-          "bamei": "ホッコームジカ",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 53.9,
-          "popularity": 9
         },
         {
           "umaban": 4,
           "bamei": "ショウナンライラ",
-          "finish": 5,
+          "finish": 4,
           "scratched": false,
-          "win_odds": 64.2,
+          "win_odds": 57.9,
           "popularity": 10
         },
         {
-          "umaban": 10,
-          "bamei": "クリノゴージャス",
-          "finish": 13,
+          "umaban": 5,
+          "bamei": "ルナフィオーレ",
+          "finish": 3,
           "scratched": false,
-          "win_odds": 477.5,
-          "popularity": 17
+          "win_odds": 5.3,
+          "popularity": 2
+        },
+        {
+          "umaban": 6,
+          "bamei": "カルロット",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 1.8,
+          "popularity": 1
+        },
+        {
+          "umaban": 7,
+          "bamei": "ケイアイブラック",
+          "finish": 9,
+          "scratched": false,
+          "win_odds": 80.2,
+          "popularity": 11
         },
         {
           "umaban": 8,
           "bamei": "トウカイツバキ",
-          "finish": 11,
+          "finish": 14,
           "scratched": false,
-          "win_odds": 235.7,
+          "win_odds": 209.0,
           "popularity": 14
+        },
+        {
+          "umaban": 9,
+          "bamei": "ナデシコザクラ",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 45.2,
+          "popularity": 8
+        },
+        {
+          "umaban": 10,
+          "bamei": "クリノゴージャス",
+          "finish": 18,
+          "scratched": false,
+          "win_odds": 413.8,
+          "popularity": 17
         },
         {
           "umaban": 11,
           "bamei": "ムーンリットビーチ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 82.4,
-          "popularity": 12
-        },
-        {
-          "umaban": 15,
-          "bamei": "タマモマリアージュ",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 200.1,
-          "popularity": 13
-        },
-        {
-          "umaban": 16,
-          "bamei": "ルーセントムーン",
-          "finish": 18,
-          "scratched": false,
-          "win_odds": 307.3,
-          "popularity": 15
-        },
-        {
-          "umaban": 18,
-          "bamei": "レガリアーナ",
           "finish": 15,
           "scratched": false,
-          "win_odds": 517.6,
-          "popularity": 18
+          "win_odds": 84.0,
+          "popularity": 12
         },
         {
           "umaban": 12,
           "bamei": "スマイリングスカイ",
           "finish": 17,
           "scratched": false,
-          "win_odds": 400.7,
+          "win_odds": 401.3,
           "popularity": 16
+        },
+        {
+          "umaban": 13,
+          "bamei": "ヒッグスボソン",
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 16.9,
+          "popularity": 6
+        },
+        {
+          "umaban": 14,
+          "bamei": "ホッコームジカ",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 53.0,
+          "popularity": 9
+        },
+        {
+          "umaban": 15,
+          "bamei": "タマモマリアージュ",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 196.5,
+          "popularity": 13
+        },
+        {
+          "umaban": 16,
+          "bamei": "ルーセントムーン",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 267.8,
+          "popularity": 15
+        },
+        {
+          "umaban": 17,
+          "bamei": "ドゥボヌール",
+          "finish": 11,
+          "scratched": false,
+          "win_odds": 40.7,
+          "popularity": 7
+        },
+        {
+          "umaban": 18,
+          "bamei": "レガリアーナ",
+          "finish": 16,
+          "scratched": false,
+          "win_odds": 472.4,
+          "popularity": 18
         }
       ]
     },
     {
       "rkey": "202610020803",
       "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
       "horses": [
         {
-          "umaban": 14,
-          "bamei": "エレーデサンライズ",
-          "finish": 4,
+          "umaban": 1,
+          "bamei": "ブライトベリル",
+          "finish": 15,
           "scratched": false,
-          "win_odds": 7.5,
-          "popularity": 3
-        },
-        {
-          "umaban": 6,
-          "bamei": "メイショウメゴヒメ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 5.0,
-          "popularity": 2
-        },
-        {
-          "umaban": 13,
-          "bamei": "スマイルガーデン",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 12.9,
-          "popularity": 6
-        },
-        {
-          "umaban": 7,
-          "bamei": "ヤマニンエルファバ",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 2.7,
-          "popularity": 1
-        },
-        {
-          "umaban": 16,
-          "bamei": "エイシンキタールン",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 30.5,
-          "popularity": 9
-        },
-        {
-          "umaban": 8,
-          "bamei": "ハツアカネ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 32.9,
-          "popularity": 11
-        },
-        {
-          "umaban": 9,
-          "bamei": "エンジェルグラース",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 15.6,
-          "popularity": 7
-        },
-        {
-          "umaban": 12,
-          "bamei": "テクノピーチ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 11.1,
-          "popularity": 5
+          "win_odds": 56.4,
+          "popularity": 12
         },
         {
           "umaban": 2,
           "bamei": "グリミスティ",
-          "finish": 11,
+          "finish": 9,
           "scratched": false,
-          "win_odds": 21.8,
+          "win_odds": 22.5,
           "popularity": 8
-        },
-        {
-          "umaban": 1,
-          "bamei": "ブライトベリル",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 54.6,
-          "popularity": 12
-        },
-        {
-          "umaban": 10,
-          "bamei": "クレスコフェーヴ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 124.4,
-          "popularity": 14
         },
         {
           "umaban": 3,
           "bamei": "ルージュマデイラ",
-          "finish": 1,
+          "finish": 4,
           "scratched": false,
-          "win_odds": 9.6,
+          "win_odds": 10.2,
           "popularity": 4
-        },
-        {
-          "umaban": 11,
-          "bamei": "ヒデガミティアラ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 83.3,
-          "popularity": 13
-        },
-        {
-          "umaban": 15,
-          "bamei": "デアアテナ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 29.5,
-          "popularity": 10
         },
         {
           "umaban": 4,
           "bamei": "カフジラクレット",
-          "finish": 16,
+          "finish": 14,
           "scratched": false,
-          "win_odds": 271.8,
+          "win_odds": 272.5,
           "popularity": 16
         },
         {
           "umaban": 5,
           "bamei": "ヴェルサイユローズ",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 280.7,
-          "popularity": 15
-        }
-      ]
-    },
-    {
-      "rkey": "202610020804",
-      "num_runners": 13,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 11,
-          "bamei": "アラムシャピラス",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 1.9,
-          "popularity": 1
-        },
-        {
-          "umaban": 8,
-          "bamei": "ダンツウルス",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 3.9,
-          "popularity": 2
-        },
-        {
-          "umaban": 12,
-          "bamei": "ブルーザー",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 8.8,
-          "popularity": 4
-        },
-        {
-          "umaban": 3,
-          "bamei": "ホウオウモチーヴ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 6.4,
-          "popularity": 3
-        },
-        {
-          "umaban": 13,
-          "bamei": "ルクスディグニティ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 29.2,
-          "popularity": 5
-        },
-        {
-          "umaban": 4,
-          "bamei": "レイワノキセキ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 66.6,
-          "popularity": 6
-        },
-        {
-          "umaban": 2,
-          "bamei": "カフジマリボー",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 416.5,
-          "popularity": 12
-        },
-        {
-          "umaban": 9,
-          "bamei": "ドットカモン",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 148.5,
-          "popularity": 9
-        },
-        {
-          "umaban": 7,
-          "bamei": "メイショウユウゲン",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 267.8,
-          "popularity": 11
-        },
-        {
-          "umaban": 1,
-          "bamei": "アクティブヘイロー",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 141.9,
-          "popularity": 8
-        },
-        {
-          "umaban": 5,
-          "bamei": "ヴィーラー",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 63.2,
-          "popularity": 7
-        },
-        {
-          "umaban": 10,
-          "bamei": "デルマタイセツ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 184.7,
-          "popularity": 10
-        },
-        {
-          "umaban": 6,
-          "bamei": "ニテンイチリュウ",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 423.2,
-          "popularity": 13
-        }
-      ]
-    },
-    {
-      "rkey": "202610020805",
-      "num_runners": 8,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 8,
-          "bamei": "ビエントゾンダ",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 3.0,
-          "popularity": 2
-        },
-        {
-          "umaban": 1,
-          "bamei": "カローナ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 45.6,
-          "popularity": 7
-        },
-        {
-          "umaban": 2,
-          "bamei": "ツーハーツ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 2.2,
-          "popularity": 1
-        },
-        {
-          "umaban": 7,
-          "bamei": "ユーダブルワン",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 3.9,
-          "popularity": 3
-        },
-        {
-          "umaban": 6,
-          "bamei": "レイクイーン",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 9.9,
-          "popularity": 4
-        },
-        {
-          "umaban": 3,
-          "bamei": "メイショウジェード",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 27.8,
-          "popularity": 5
-        },
-        {
-          "umaban": 4,
-          "bamei": "レアアース",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 34.5,
-          "popularity": 6
-        },
-        {
-          "umaban": 5,
-          "bamei": "ホットロッドハート",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 61.9,
-          "popularity": 8
-        }
-      ]
-    },
-    {
-      "rkey": "202610020806",
-      "num_runners": 14,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 4,
-          "bamei": "フレアオブセンス",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 3.0,
-          "popularity": 1
-        },
-        {
-          "umaban": 8,
-          "bamei": "ウルトラハート",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 2.9,
-          "popularity": 2
-        },
-        {
-          "umaban": 10,
-          "bamei": "サトノライトニング",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 36.1,
-          "popularity": 9
-        },
-        {
-          "umaban": 11,
-          "bamei": "レッドフレーザー",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 35.4,
-          "popularity": 8
-        },
-        {
-          "umaban": 5,
-          "bamei": "アイアン",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 11.1,
-          "popularity": 5
-        },
-        {
-          "umaban": 13,
-          "bamei": "コズミックフレア",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 8.8,
-          "popularity": 4
-        },
-        {
-          "umaban": 2,
-          "bamei": "テイエムファントム",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 13.9,
-          "popularity": 6
-        },
-        {
-          "umaban": 6,
-          "bamei": "リリーサンダー",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 7.0,
-          "popularity": 3
-        },
-        {
-          "umaban": 1,
-          "bamei": "テーオータウンズ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 90.9,
-          "popularity": 11
-        },
-        {
-          "umaban": 12,
-          "bamei": "メイショウゲッコウ",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 19.1,
-          "popularity": 7
-        },
-        {
-          "umaban": 9,
-          "bamei": "ビーウィナー",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 271.4,
-          "popularity": 14
-        },
-        {
-          "umaban": 3,
-          "bamei": "トゥレネヴェリテ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 56.2,
-          "popularity": 10
-        },
-        {
-          "umaban": 14,
-          "bamei": "サカトクフェイス",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 91.8,
-          "popularity": 12
-        },
-        {
-          "umaban": 7,
-          "bamei": "テーオーレックス",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 223.2,
-          "popularity": 13
-        }
-      ]
-    },
-    {
-      "rkey": "202610020807",
-      "num_runners": 17,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 10,
-          "bamei": "ダイアナクイーン",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 6.4,
-          "popularity": 3
-        },
-        {
-          "umaban": 1,
-          "bamei": "ピアストイヤーズ",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 4.5,
-          "popularity": 1
-        },
-        {
-          "umaban": 9,
-          "bamei": "キョラムン",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 12.0,
-          "popularity": 7
-        },
-        {
-          "umaban": 2,
-          "bamei": "ウェルカムソング",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 6.4,
-          "popularity": 2
-        },
-        {
-          "umaban": 11,
-          "bamei": "ミライハーモニー",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 6.3,
-          "popularity": 4
-        },
-        {
-          "umaban": 8,
-          "bamei": "タガノアルブラック",
-          "finish": 17,
-          "scratched": false,
-          "win_odds": null,
-          "popularity": null
-        },
-        {
-          "umaban": 4,
-          "bamei": "ヒットザグラウンド",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 38.0,
-          "popularity": 9
-        },
-        {
-          "umaban": 7,
-          "bamei": "フィラーエ",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 7.7,
-          "popularity": 6
-        },
-        {
-          "umaban": 5,
-          "bamei": "アーリントンロウ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 8.4,
-          "popularity": 5
-        },
-        {
-          "umaban": 13,
-          "bamei": "マウンテンバローズ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 13.9,
-          "popularity": 8
-        },
-        {
-          "umaban": 3,
-          "bamei": "アスクザアメリカン",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 162.1,
-          "popularity": 16
-        },
-        {
-          "umaban": 17,
-          "bamei": "イリスアスール",
           "finish": 16,
           "scratched": false,
-          "win_odds": 56.2,
-          "popularity": 12
-        },
-        {
-          "umaban": 14,
-          "bamei": "レオナルドスター",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 34.1,
-          "popularity": 10
-        },
-        {
-          "umaban": 16,
-          "bamei": "バーケンティン",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 66.3,
-          "popularity": 13
-        },
-        {
-          "umaban": 12,
-          "bamei": "ペルフェツィオーネ",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 162.7,
+          "win_odds": 271.9,
           "popularity": 15
         },
         {
           "umaban": 6,
-          "bamei": "ラブアイミー",
-          "finish": 13,
+          "bamei": "メイショウメゴヒメ",
+          "finish": 3,
           "scratched": false,
-          "win_odds": 39.5,
-          "popularity": 11
-        },
-        {
-          "umaban": 15,
-          "bamei": "ソリスディエス",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 105.3,
-          "popularity": 14
-        }
-      ]
-    },
-    {
-      "rkey": "202610020808",
-      "num_runners": 14,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 4,
-          "bamei": "アメリカンビヨンド",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 11.0,
-          "popularity": 6
-        },
-        {
-          "umaban": 1,
-          "bamei": "アイカンアズーラ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 5.0,
+          "win_odds": 4.4,
           "popularity": 2
-        },
-        {
-          "umaban": 9,
-          "bamei": "ドラムメジャー",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 4.9,
-          "popularity": 3
-        },
-        {
-          "umaban": 3,
-          "bamei": "スマッシング",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 3.9,
-          "popularity": 1
-        },
-        {
-          "umaban": 6,
-          "bamei": "サンライズジュピタ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 17.3,
-          "popularity": 7
-        },
-        {
-          "umaban": 10,
-          "bamei": "プルミエールパス",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 9.7,
-          "popularity": 5
-        },
-        {
-          "umaban": 13,
-          "bamei": "ミヤフロント",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 26.7,
-          "popularity": 8
         },
         {
           "umaban": 7,
-          "bamei": "ペルセポネ",
-          "finish": 1,
+          "bamei": "ヤマニンエルファバ",
+          "finish": 5,
           "scratched": false,
-          "win_odds": 5.9,
-          "popularity": 4
-        },
-        {
-          "umaban": 2,
-          "bamei": "イイデカンタロウ",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 64.9,
-          "popularity": 12
-        },
-        {
-          "umaban": 12,
-          "bamei": "ジャンシ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 65.5,
-          "popularity": 10
-        },
-        {
-          "umaban": 8,
-          "bamei": "ナンヨークリスタル",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 138.7,
-          "popularity": 14
-        },
-        {
-          "umaban": 14,
-          "bamei": "ミヤラティーニ",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 28.0,
-          "popularity": 9
-        },
-        {
-          "umaban": 11,
-          "bamei": "スレッドザニードル",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 130.3,
-          "popularity": 13
-        },
-        {
-          "umaban": 5,
-          "bamei": "ヨドノゴールド",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 71.7,
-          "popularity": 11
-        }
-      ]
-    },
-    {
-      "rkey": "202610020809",
-      "num_runners": 8,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 3,
-          "bamei": "タンテドヴィーヴル",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 1.5,
+          "win_odds": 2.7,
           "popularity": 1
         },
         {
-          "umaban": 4,
-          "bamei": "モアニ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 8.8,
-          "popularity": 4
-        },
-        {
-          "umaban": 7,
-          "bamei": "クスクス",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 6.6,
-          "popularity": 3
-        },
-        {
           "umaban": 8,
-          "bamei": "ユメハハテシナク",
-          "finish": 4,
+          "bamei": "ハツアカネ",
+          "finish": 10,
           "scratched": false,
-          "win_odds": 10.0,
-          "popularity": 5
-        },
-        {
-          "umaban": 5,
-          "bamei": "ハイディージェン",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 52.2,
-          "popularity": 8
-        },
-        {
-          "umaban": 6,
-          "bamei": "ゼンノインヴォーク",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 6.1,
-          "popularity": 2
-        },
-        {
-          "umaban": 2,
-          "bamei": "ヤマニンループ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 13.5,
-          "popularity": 6
-        },
-        {
-          "umaban": 1,
-          "bamei": "キーウェーブ",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 35.9,
-          "popularity": 7
-        }
-      ]
-    },
-    {
-      "rkey": "202610020810",
-      "num_runners": 16,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 16,
-          "bamei": "アレナパラシオ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 8.0,
-          "popularity": 4
-        },
-        {
-          "umaban": 1,
-          "bamei": "ジューンエオス",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 4.2,
-          "popularity": 1
-        },
-        {
-          "umaban": 14,
-          "bamei": "カルパ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 5.9,
-          "popularity": 2
-        },
-        {
-          "umaban": 12,
-          "bamei": "サイモンシュバリエ",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 13.7,
-          "popularity": 7
-        },
-        {
-          "umaban": 13,
-          "bamei": "レヴァンテシチー",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 6.6,
-          "popularity": 3
-        },
-        {
-          "umaban": 10,
-          "bamei": "ナヴォーナ",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 41.9,
-          "popularity": 15
-        },
-        {
-          "umaban": 15,
-          "bamei": "インザモーメント",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 37.3,
+          "win_odds": 31.0,
           "popularity": 11
         },
         {
-          "umaban": 5,
-          "bamei": "テーオールビー",
-          "finish": 13,
-          "scratched": false,
-          "win_odds": 40.3,
-          "popularity": 12
-        },
-        {
-          "umaban": 2,
-          "bamei": "メイショウシナノ",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 29.9,
-          "popularity": 10
-        },
-        {
-          "umaban": 6,
-          "bamei": "カミノレアル",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 8.3,
-          "popularity": 5
-        },
-        {
-          "umaban": 4,
-          "bamei": "グランキングオー",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 21.4,
-          "popularity": 9
-        },
-        {
-          "umaban": 3,
-          "bamei": "ダノンスウィッチ",
-          "finish": 12,
-          "scratched": false,
-          "win_odds": 18.4,
-          "popularity": 8
-        },
-        {
-          "umaban": 8,
-          "bamei": "モズカトレア",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 10.6,
-          "popularity": 6
-        },
-        {
           "umaban": 9,
-          "bamei": "マッシャーブルム",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 41.3,
-          "popularity": 13
-        },
-        {
-          "umaban": 7,
-          "bamei": "プロミシングスター",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 43.2,
-          "popularity": 14
-        },
-        {
-          "umaban": 11,
-          "bamei": "メイショウオーロラ",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 70.8,
-          "popularity": 16
-        }
-      ]
-    },
-    {
-      "rkey": "202610020811",
-      "num_runners": 18,
-      "track_cond": "良",
-      "weather": "晴",
-      "horses": [
-        {
-          "umaban": 9,
-          "bamei": "ジーティーアダマン",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 7.1,
-          "popularity": 3
-        },
-        {
-          "umaban": 18,
-          "bamei": "レーゼドラマ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 18.6,
-          "popularity": 6
-        },
-        {
-          "umaban": 17,
-          "bamei": "ジョバンニ",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 3.1,
-          "popularity": 1
-        },
-        {
-          "umaban": 6,
-          "bamei": "ガイアメンテ",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 5.6,
-          "popularity": 2
-        },
-        {
-          "umaban": 14,
-          "bamei": "ウエストナウ",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 10.3,
-          "popularity": 5
-        },
-        {
-          "umaban": 13,
-          "bamei": "カエルム",
+          "bamei": "エンジェルグラース",
           "finish": 13,
-          "scratched": false,
-          "win_odds": 35.2,
-          "popularity": 12
-        },
-        {
-          "umaban": 2,
-          "bamei": "タガノアビー",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 7.0,
-          "popularity": 4
-        },
-        {
-          "umaban": 15,
-          "bamei": "テーオーソラネル",
-          "finish": 17,
-          "scratched": false,
-          "win_odds": 236.4,
-          "popularity": 18
-        },
-        {
-          "umaban": 12,
-          "bamei": "ケイズレーヴ",
-          "finish": 15,
-          "scratched": false,
-          "win_odds": 115.2,
-          "popularity": 16
-        },
-        {
-          "umaban": 8,
-          "bamei": "サフィラ",
-          "finish": 10,
-          "scratched": false,
-          "win_odds": 18.8,
-          "popularity": 8
-        },
-        {
-          "umaban": 1,
-          "bamei": "ゼンダンハヤブサ",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 35.8,
-          "popularity": 10
-        },
-        {
-          "umaban": 3,
-          "bamei": "ナムラエイハブ",
-          "finish": 11,
-          "scratched": false,
-          "win_odds": 58.9,
-          "popularity": 13
-        },
-        {
-          "umaban": 5,
-          "bamei": "エヒト",
-          "finish": 9,
           "scratched": false,
           "win_odds": 16.1,
           "popularity": 7
         },
         {
           "umaban": 10,
-          "bamei": "マイネルメモリー",
-          "finish": 3,
+          "bamei": "クレスコフェーヴ",
+          "finish": 8,
           "scratched": false,
-          "win_odds": 40.2,
+          "win_odds": 132.1,
+          "popularity": 14
+        },
+        {
+          "umaban": 11,
+          "bamei": "ヒデガミティアラ",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 79.1,
+          "popularity": 13
+        },
+        {
+          "umaban": 12,
+          "bamei": "テクノピーチ",
+          "finish": 1,
+          "scratched": false,
+          "win_odds": 10.5,
+          "popularity": 5
+        },
+        {
+          "umaban": 13,
+          "bamei": "スマイルガーデン",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 13.8,
+          "popularity": 6
+        },
+        {
+          "umaban": 14,
+          "bamei": "エレーデサンライズ",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 6.9,
+          "popularity": 3
+        },
+        {
+          "umaban": 15,
+          "bamei": "デアアテナ",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 28.4,
+          "popularity": 10
+        },
+        {
+          "umaban": 16,
+          "bamei": "エイシンキタールン",
+          "finish": 11,
+          "scratched": false,
+          "win_odds": 27.9,
+          "popularity": 9
+        }
+      ]
+    },
+    {
+      "rkey": "202610020804",
+      "num_runners": 14,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "アクティブヘイロー",
+          "finish": 13,
+          "scratched": false,
+          "win_odds": 135.5,
+          "popularity": 9
+        },
+        {
+          "umaban": 2,
+          "bamei": "カフジマリボー",
+          "finish": 9,
+          "scratched": false,
+          "win_odds": 394.9,
+          "popularity": 13
+        },
+        {
+          "umaban": 3,
+          "bamei": "ホウオウモチーヴ",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 5.9,
+          "popularity": 3
+        },
+        {
+          "umaban": 4,
+          "bamei": "レイワノキセキ",
+          "finish": 10,
+          "scratched": false,
+          "win_odds": 69.6,
+          "popularity": 7
+        },
+        {
+          "umaban": 5,
+          "bamei": "ヴィーラー",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 70.6,
+          "popularity": 8
+        },
+        {
+          "umaban": 6,
+          "bamei": "ニテンイチリュウ",
+          "finish": 11,
+          "scratched": false,
+          "win_odds": 463.1,
+          "popularity": 14
+        },
+        {
+          "umaban": 7,
+          "bamei": "メイショウユウゲン",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 267.8,
+          "popularity": 12
+        },
+        {
+          "umaban": 8,
+          "bamei": "ダンツウルス",
+          "finish": 1,
+          "scratched": false,
+          "win_odds": 3.5,
+          "popularity": 2
+        },
+        {
+          "umaban": 9,
+          "bamei": "ドットカモン",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 155.9,
+          "popularity": 10
+        },
+        {
+          "umaban": 10,
+          "bamei": "デルマタイセツ",
+          "finish": 12,
+          "scratched": false,
+          "win_odds": 194.8,
           "popularity": 11
         },
         {
           "umaban": 11,
-          "bamei": "カネフラ",
-          "finish": 12,
+          "bamei": "アラムシャピラス",
+          "finish": 3,
           "scratched": false,
-          "win_odds": 126.2,
-          "popularity": 14
+          "win_odds": 1.8,
+          "popularity": 1
+        },
+        {
+          "umaban": 12,
+          "bamei": "ブルーザー",
+          "finish": 4,
+          "scratched": false,
+          "win_odds": 7.9,
+          "popularity": 4
+        },
+        {
+          "umaban": 13,
+          "bamei": "ルクスディグニティ",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 29.1,
+          "popularity": 6
+        },
+        {
+          "umaban": 14,
+          "bamei": "アイスフォーク",
+          "finish": null,
+          "scratched": true,
+          "win_odds": 17.9,
+          "popularity": 5
+        }
+      ]
+    },
+    {
+      "rkey": "202610020805",
+      "num_runners": 8,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "カローナ",
+          "finish": 6,
+          "scratched": false,
+          "win_odds": 48.9,
+          "popularity": 7
+        },
+        {
+          "umaban": 2,
+          "bamei": "ツーハーツ",
+          "finish": 7,
+          "scratched": false,
+          "win_odds": 2.1,
+          "popularity": 1
+        },
+        {
+          "umaban": 3,
+          "bamei": "メイショウジェード",
+          "finish": 2,
+          "scratched": false,
+          "win_odds": 24.7,
+          "popularity": 5
+        },
+        {
+          "umaban": 4,
+          "bamei": "レアアース",
+          "finish": 8,
+          "scratched": false,
+          "win_odds": 29.8,
+          "popularity": 6
+        },
+        {
+          "umaban": 5,
+          "bamei": "ホットロッドハート",
+          "finish": 5,
+          "scratched": false,
+          "win_odds": 59.2,
+          "popularity": 8
+        },
+        {
+          "umaban": 6,
+          "bamei": "レイクイーン",
+          "finish": 3,
+          "scratched": false,
+          "win_odds": 9.5,
+          "popularity": 4
+        },
+        {
+          "umaban": 7,
+          "bamei": "ユーダブルワン",
+          "finish": 1,
+          "scratched": false,
+          "win_odds": 3.6,
+          "popularity": 3
+        },
+        {
+          "umaban": 8,
+          "bamei": "ビエントゾンダ",
+          "finish": 4,
+          "scratched": false,
+          "win_odds": 3.2,
+          "popularity": 2
+        }
+      ]
+    },
+    {
+      "rkey": "202610020806",
+      "num_runners": 0,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "テーオータウンズ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 2,
+          "bamei": "テイエムファントム",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "トゥレネヴェリテ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "フレアオブセンス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "アイアン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "リリーサンダー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "テーオーレックス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "ウルトラハート",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "ビーウィナー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "サトノライトニング",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "レッドフレーザー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "メイショウゲッコウ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "コズミックフレア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "サカトクフェイス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        }
+      ]
+    },
+    {
+      "rkey": "202610020807",
+      "num_runners": 0,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "ピアストイヤーズ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 2,
+          "bamei": "ウェルカムソング",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "アスクザアメリカン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "ヒットザグラウンド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "アーリントンロウ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ラブアイミー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "フィラーエ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "タガノアルブラック",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "キョラムン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "ダイアナクイーン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "ミライハーモニー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ペルフェツィオーネ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "マウンテンバローズ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "レオナルドスター",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "ソリスディエス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 16,
+          "bamei": "バーケンティン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 17,
+          "bamei": "イリスアスール",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        }
+      ]
+    },
+    {
+      "rkey": "202610020808",
+      "num_runners": 0,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "アイカンアズーラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 2,
+          "bamei": "イイデカンタロウ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "スマッシング",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "アメリカンビヨンド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "ヨドノゴールド",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "サンライズジュピタ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ペルセポネ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "ナンヨークリスタル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "ドラムメジャー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "プルミエールパス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "スレッドザニードル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ジャンシ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "ミヤフロント",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "ミヤラティーニ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        }
+      ]
+    },
+    {
+      "rkey": "202610020809",
+      "num_runners": 0,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "キーウェーブ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 2,
+          "bamei": "ヤマニンループ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "タンテドヴィーヴル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "モアニ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "ハイディージェン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ゼンノインヴォーク",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "クスクス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "ユメハハテシナク",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        }
+      ]
+    },
+    {
+      "rkey": "202610020810",
+      "num_runners": 0,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "ジューンエオス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 2,
+          "bamei": "メイショウシナノ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "ダノンスウィッチ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "グランキングオー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "テーオールビー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "カミノレアル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "プロミシングスター",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "モズカトレア",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "マッシャーブルム",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "ナヴォーナ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "メイショウオーロラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "サイモンシュバリエ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "レヴァンテシチー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "カルパ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "インザモーメント",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 16,
+          "bamei": "アレナパラシオ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        }
+      ]
+    },
+    {
+      "rkey": "202610020811",
+      "num_runners": 0,
+      "horses": [
+        {
+          "umaban": 1,
+          "bamei": "ゼンダンハヤブサ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 2,
+          "bamei": "タガノアビー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 3,
+          "bamei": "ナムラエイハブ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 4,
           "bamei": "コパノサントス",
-          "finish": 18,
-          "scratched": false,
-          "win_odds": 117.3,
-          "popularity": 15
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 16,
-          "bamei": "ノーランサンライズ",
-          "finish": 14,
-          "scratched": false,
-          "win_odds": 20.9,
-          "popularity": 9
+          "umaban": 5,
+          "bamei": "エヒト",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "ガイアメンテ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 7,
           "bamei": "トータルクラリティ",
-          "finish": 16,
-          "scratched": false,
-          "win_odds": 183.8,
-          "popularity": 17
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "サフィラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "ジーティーアダマン",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 10,
+          "bamei": "マイネルメモリー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 11,
+          "bamei": "カネフラ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 12,
+          "bamei": "ケイズレーヴ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 13,
+          "bamei": "カエルム",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 14,
+          "bamei": "ウエストナウ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 15,
+          "bamei": "テーオーソラネル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 16,
+          "bamei": "ノーランサンライズ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 17,
+          "bamei": "ジョバンニ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 18,
+          "bamei": "レーゼドラマ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     },
     {
       "rkey": "202610020812",
-      "num_runners": 9,
-      "track_cond": "良",
-      "weather": "晴",
+      "num_runners": 0,
       "horses": [
         {
-          "umaban": 7,
-          "bamei": "ミッキージャンプ",
-          "finish": 2,
-          "scratched": false,
-          "win_odds": 2.7,
-          "popularity": 1
-        },
-        {
-          "umaban": 4,
-          "bamei": "ロングトールサリー",
-          "finish": 5,
-          "scratched": false,
-          "win_odds": 3.6,
-          "popularity": 2
-        },
-        {
-          "umaban": 8,
-          "bamei": "グラスベルグ",
-          "finish": 8,
-          "scratched": false,
-          "win_odds": 7.9,
-          "popularity": 3
-        },
-        {
-          "umaban": 5,
-          "bamei": "フレイムスター",
-          "finish": 7,
-          "scratched": false,
-          "win_odds": 8.9,
-          "popularity": 4
-        },
-        {
-          "umaban": 6,
-          "bamei": "オーシンエス",
-          "finish": 6,
-          "scratched": false,
-          "win_odds": 9.7,
-          "popularity": 5
-        },
-        {
-          "umaban": 9,
-          "bamei": "ゼットエイト",
-          "finish": 9,
-          "scratched": false,
-          "win_odds": 18.6,
-          "popularity": 6
-        },
-        {
-          "umaban": 3,
-          "bamei": "ブリッツアロング",
-          "finish": 4,
-          "scratched": false,
-          "win_odds": 44.2,
-          "popularity": 9
+          "umaban": 1,
+          "bamei": "アウローラシエル",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
           "umaban": 2,
           "bamei": "ヴィーナスバブル",
-          "finish": 1,
-          "scratched": false,
-          "win_odds": 19.5,
-          "popularity": 8
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         },
         {
-          "umaban": 1,
-          "bamei": "アウローラシエル",
-          "finish": 3,
-          "scratched": false,
-          "win_odds": 19.0,
-          "popularity": 7
+          "umaban": 3,
+          "bamei": "ブリッツアロング",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 4,
+          "bamei": "ロングトールサリー",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 5,
+          "bamei": "フレイムスター",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 6,
+          "bamei": "オーシンエス",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 7,
+          "bamei": "ミッキージャンプ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 8,
+          "bamei": "グラスベルグ",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
+        },
+        {
+          "umaban": 9,
+          "bamei": "ゼットエイト",
+          "finish": null,
+          "scratched": true,
+          "win_odds": null,
+          "popularity": 0
         }
       ]
     }

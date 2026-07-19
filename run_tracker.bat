@@ -15,6 +15,7 @@ set YMD=%~1
 REM --- 作業ラボ側のパス（必要に応じて修正） ---
 set LAB=C:\keiba
 set JVCACHE=C:\ProgramData\JRA-VAN\Data Lab\cache
+set ECORE=%LOCALAPPDATA%\EveryDB3\ecore.db
 
 echo [1/5] 予想抽出 race_%YMD%.html
 python collector\extract_predictions.py "%LAB%\race_%YMD%.html" || goto :err
@@ -22,8 +23,8 @@ python collector\extract_predictions.py "%LAB%\race_%YMD%.html" || goto :err
 echo [2/5] オッズ抽出 (JRA-VAN cache)
 python collector\parse_jv_o1.py --cache "%JVCACHE%" --date %YMD% || goto :err
 
-echo [3/5] 実績（暫定デモ。着順取得を実装したら fetch_results.py に置換）
-python collector\make_demo_results.py data\predictions\%YMD%.json || goto :err
+echo [3/5] 確定着順・オッズ取得 (ecore.db) ※レース確定後・EveryDB3で成績取込後に実行
+python collector\fetch_results.py --ecore "%ECORE%" --date %YMD% || goto :err
 
 echo [4/5] 集計 -> data\metrics.json
 python collector\aggregate.py || goto :err
