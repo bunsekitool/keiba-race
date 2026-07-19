@@ -7,6 +7,16 @@
     {
       "rkey": "202602011201",
       "num_runners": 8,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            3,
+            5
+          ],
+          "pay": 1260
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -77,6 +87,16 @@
     {
       "rkey": "202602011202",
       "num_runners": 10,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            4,
+            7
+          ],
+          "pay": 7920
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -163,6 +183,16 @@
     {
       "rkey": "202602011203",
       "num_runners": 14,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            3,
+            9,
+            11
+          ],
+          "pay": 2270
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -281,6 +311,16 @@
     {
       "rkey": "202602011204",
       "num_runners": 13,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            3,
+            8,
+            11
+          ],
+          "pay": 17160
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -391,6 +431,16 @@
     {
       "rkey": "202602011205",
       "num_runners": 14,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            4,
+            5
+          ],
+          "pay": 48940
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -509,6 +559,16 @@
     {
       "rkey": "202602011206",
       "num_runners": 16,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            9,
+            10
+          ],
+          "pay": 1890
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -643,6 +703,16 @@
     {
       "rkey": "202602011207",
       "num_runners": 0,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            4,
+            6,
+            10
+          ],
+          "pay": 2570
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -761,6 +831,16 @@
     {
       "rkey": "202602011208",
       "num_runners": 10,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            4,
+            5,
+            8
+          ],
+          "pay": 3600
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -847,6 +927,16 @@
     {
       "rkey": "202602011209",
       "num_runners": 13,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            4,
+            6,
+            9
+          ],
+          "pay": 1920
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -957,6 +1047,16 @@
     {
       "rkey": "202602011210",
       "num_runners": 14,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            9,
+            12,
+            14
+          ],
+          "pay": 1050
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -1075,6 +1175,16 @@
     {
       "rkey": "202602011211",
       "num_runners": 13,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            2,
+            5,
+            9
+          ],
+          "pay": 11530
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -1185,6 +1295,7 @@
     {
       "rkey": "202602011212",
       "num_runners": 0,
+      "sanrenpuku": [],
       "horses": [
         {
           "umaban": 1,
@@ -1303,6 +1414,16 @@
     {
       "rkey": "202603020801",
       "num_runners": 10,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            6,
+            10
+          ],
+          "pay": 840
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -1389,6 +1510,16 @@
     {
       "rkey": "202603020802",
       "num_runners": 16,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            13,
+            15,
+            16
+          ],
+          "pay": 9150
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -1523,6 +1654,16 @@
     {
       "rkey": "202603020803",
       "num_runners": 16,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            2,
+            8,
+            13
+          ],
+          "pay": 39930
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -1657,6 +1798,16 @@
     {
       "rkey": "202603020804",
       "num_runners": 15,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            2,
+            5,
+            9
+          ],
+          "pay": 3230
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -1783,6 +1934,16 @@
     {
       "rkey": "202603020805",
       "num_runners": 13,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            4,
+            9,
+            11
+          ],
+          "pay": 1010
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -1893,6 +2054,16 @@
     {
       "rkey": "202603020806",
       "num_runners": 0,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            6,
+            10,
+            14
+          ],
+          "pay": 5920
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -2027,6 +2198,16 @@
     {
       "rkey": "202603020807",
       "num_runners": 0,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            3,
+            7,
+            13
+          ],
+          "pay": 4180
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -2153,6 +2334,16 @@
     {
       "rkey": "202603020808",
       "num_runners": 16,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            3,
+            6,
+            13
+          ],
+          "pay": 62120
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -2287,6 +2478,16 @@
     {
       "rkey": "202603020809",
       "num_runners": 16,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            8,
+            13
+          ],
+          "pay": 8020
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -2421,6 +2622,16 @@
     {
       "rkey": "202603020810",
       "num_runners": 12,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            4,
+            6,
+            7
+          ],
+          "pay": 650
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -2523,6 +2734,16 @@
     {
       "rkey": "202603020811",
       "num_runners": 16,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            2,
+            7,
+            14
+          ],
+          "pay": 35610
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -2657,6 +2878,7 @@
     {
       "rkey": "202603020812",
       "num_runners": 0,
+      "sanrenpuku": [],
       "horses": [
         {
           "umaban": 1,
@@ -2783,6 +3005,16 @@
     {
       "rkey": "202610020802",
       "num_runners": 18,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            2,
+            3,
+            5
+          ],
+          "pay": 3130
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -2933,6 +3165,16 @@
     {
       "rkey": "202610020803",
       "num_runners": 16,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            6,
+            12,
+            14
+          ],
+          "pay": 5900
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3067,6 +3309,16 @@
     {
       "rkey": "202610020804",
       "num_runners": 14,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            3,
+            8,
+            11
+          ],
+          "pay": 450
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3185,6 +3437,16 @@
     {
       "rkey": "202610020805",
       "num_runners": 8,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            3,
+            6,
+            7
+          ],
+          "pay": 3770
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3255,6 +3517,16 @@
     {
       "rkey": "202610020806",
       "num_runners": 0,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            6,
+            11,
+            13
+          ],
+          "pay": 18830
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3373,6 +3645,16 @@
     {
       "rkey": "202610020807",
       "num_runners": 0,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            10,
+            13
+          ],
+          "pay": 8110
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3515,6 +3797,16 @@
     {
       "rkey": "202610020808",
       "num_runners": 14,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            7,
+            12,
+            14
+          ],
+          "pay": 93010
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3633,6 +3925,16 @@
     {
       "rkey": "202610020809",
       "num_runners": 8,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            3,
+            6,
+            7
+          ],
+          "pay": 960
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3703,6 +4005,16 @@
     {
       "rkey": "202610020810",
       "num_runners": 16,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            4,
+            7
+          ],
+          "pay": 37220
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3837,6 +4149,16 @@
     {
       "rkey": "202610020811",
       "num_runners": 5,
+      "sanrenpuku": [
+        {
+          "kumi": [
+            1,
+            17,
+            18
+          ],
+          "pay": 22060
+        }
+      ],
       "horses": [
         {
           "umaban": 1,
@@ -3987,6 +4309,7 @@
     {
       "rkey": "202610020812",
       "num_runners": 0,
+      "sanrenpuku": [],
       "horses": [
         {
           "umaban": 1,

@@ -152,12 +152,20 @@ function render(m){
     + tile('本命の平均人気', a1.honmei_avg_market_rank==null?'—':a1.honmei_avg_market_rank.toFixed(2),'低いほど人気馬寄り')
     + tile('pf上位3の複勝圏率', pct(a1.top3_any_place_rate),'3頭中1頭でも圏内');
 
-  // 三連複ボックス
+  // 三連複ボックス（的中率＋回収率）
   const tb=m.trifecta_box;
   if(tb&&tb.by_topN){
+    const rows=tb.by_topN.map(row=>{
+      const roi=row.roi;
+      const roiTxt=roi==null?'—':(roi*100).toFixed(0)+'%';
+      const roiCls=roi==null?'muted':(roi>=1?'roi-hi':'roi-lo');
+      return `<tr><td>pf上位${row.topN}頭</td><td>${row.points}点 (${row.cost_per_race}円)</td>`
+        +`<td>${pct(row.hit_rate)}</td><td class="${roiCls}">${roiTxt}</td>`
+        +`<td class="muted">${row.n_races}</td></tr>`;
+    }).join('');
     document.getElementById('trifecta').innerHTML =
-      tb.by_topN.map(row=>barRow(`pf上位${row.topN}頭（${row.points}点）`, row.hit_rate, row.hit_rate, 'var(--seq-400)', `${pct(row.hit_rate)}<span class="muted" style="font-size:10px"> n=${row.n_races}</span>`)).join('')
-      + `<div class="muted" style="font-size:11px;margin-top:6px">${tb.note}</div>`;
+      `<table><thead><tr><th>買い方</th><th>点数(1点100円)</th><th>的中率</th><th>回収率</th><th>対象R</th></tr></thead><tbody>${rows}</tbody></table>`
+      + `<div class="muted" style="font-size:11px;margin-top:7px">${tb.note}</div>`;
   }
 
   // 軸2

@@ -65,10 +65,16 @@ def make(pred_path, seed=20260719):
                 "win_odds": odds,
                 "popularity": h.get("market_rank"),
             })
+        # デモ用 三連複払戻: 当たり=1〜3着、Pay≒市場勝率の積から概算
+        podium = sorted(order[:3], key=lambda h: h["umaban"])
+        qs = [max(h.get("market_q") or 0.05, 0.01) for h in podium]
+        prod = qs[0] * qs[1] * qs[2]
+        pay = int(min(99999, max(100, round(0.65 / prod / 10.0) * 10)))
         races_out.append({
             "rkey": r["rkey"],
             "num_runners": len(horses),
             "track_cond": "良", "weather": "晴",
+            "sanrenpuku": [{"kumi": [h["umaban"] for h in podium], "pay": pay}],
             "horses": hs,
         })
 

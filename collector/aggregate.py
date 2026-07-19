@@ -21,6 +21,7 @@ import glob
 import json
 import os
 from collections import defaultdict
+from math import comb
 
 SCRATCH_FINISH = {0, None, 99}  # 取消・除外・中止などの着順表現
 
@@ -109,6 +110,7 @@ def join_day(pred, res):
             "segment": pr.get("segment"), "race_num": pr.get("race_num"),
             "agreement_spearman": pr.get("agreement_spearman"),
             "num_runners": num_runners if num_runners else len([h for h in pr["horses"]]),
+            "sanrenpuku": (rr.get("sanrenpuku") if rr else []) or [],
             "has_result": rr is not None,
             "has_market": pr.get("has_market", any(h.get("market_q") is not None for h in pr["horses"])),
             "horses": horses,
@@ -148,6 +150,7 @@ def aggregate(pred_glob, res_glob):
             "warnings": all_warnings[:50],
         },
         "axis1_honmei": axis1_honmei(races_with_result),
+        "trifecta_box": trifecta_box(races_with_result),
         "axis2_vs_market": axis2_vs_market(races_with_result, all_races),
         "axis3_edge": axis3_edge(races_with_result),
         "axis4_calibration": axis4_calibration(races_with_result),
@@ -198,6 +201,53 @@ def axis1_honmei(races):
         "honmei_avg_market_rank": avg(honmei_market_ranks),
         "top2_any_place_rate": rate(top2_place, n),
         "top3_any_place_rate": rate(top3_place, n),
+    }
+
+
+def trifecta_box(races, ns=(3, 4, 5), unit=100):
+    """
+    pf上位N頭を三連複ボックス(C(N,3)点)で買ったときの的中率と回収率。
+    的中＝実際の1〜3着が全て pf_rank<=N。回収率は N_HARAI の三連複払戻(100円あたり)を使用。
+    - 分母（的中率）: 3頭以上着順確定 & 出走頭数>N のレース。
+    - 回収率: 上記のうち三連複払戻データがあるレースで、
+        コスト = C(N,3)*unit（毎レース）, 払戻 = 当たり組番が pf上位N頭に収まる場合のPay合計。
+    - box は pf_rank<=N の「出走馬」で構成（取消は除外）。
+    """
+    hit = {n: 0 for n in ns}
+    denom = {n: 0 for n in ns}
+    ret = {n: 0 for n in ns}      # 払戻合計(円)
+    cost = {n: 0 for n in ns}     # 購入合計(円)
+    nroi = {n: 0 for n in ns}     # 回収率の対象レース数
+    for r in races:
+        fin = [h for h in r["horses"] if finished(h) and h.get("pf_rank") is not None]
+        podium = [h for h in fin if h.get("finish") in (1, 2, 3)]
+        if len(podium) < 3:
+            continue
+        nr = r.get("num_runners") or len(fin)
+        payoffs = r.get("sanrenpuku") or []
+        for n in ns:
+            if nr <= n:            # 頭数<=Nはボックス=全頭で自明的中のため除外
+                continue
+            denom[n] += 1
+            if all(h["pf_rank"] <= n for h in podium):
+                hit[n] += 1
+            # --- 回収率（払戻データがある場合のみ）---
+            if payoffs:
+                box = set(h["umaban"] for h in fin if h["pf_rank"] <= n)
+                cost[n] += comb(n, 3) * unit
+                nroi[n] += 1
+                for po in payoffs:
+                    if set(po["kumi"]).issubset(box):
+                        ret[n] += po["pay"]        # Pay は100円あたり=unit前提
+    return {
+        "unit": unit,
+        "by_topN": [{
+            "topN": n, "points": comb(n, 3),
+            "n_races": denom[n], "hit_rate": rate(hit[n], denom[n]),
+            "roi": rate(ret[n], cost[n]), "n_roi_races": nroi[n],
+            "cost_per_race": comb(n, 3) * unit,
+        } for n in ns],
+        "note": "的中=1〜3着がpf上位N頭に全収まり。回収率=三連複払戻(N_HARAI)/購入額。頭数>Nのレースのみ。",
     }
 
 

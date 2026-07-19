@@ -42,9 +42,43 @@ def _cols(con, table):
         return []
 
 
+def _parse_kumi(s):
+    """'010510' -> [1,5,10] / 不正は None"""
+    s = str(s or "").strip()
+    if len(s) != 6 or not s.isdigit():
+        return None
+    trio = [int(s[0:2]), int(s[2:4]), int(s[4:6])]
+    return trio if all(1 <= x <= 18 for x in trio) else None
+
+
+def load_sanrenpuku_payoffs(con, y, md):
+    """N_HARAI から三連複の当たり組番・払戻(100円あたり)を rkey ごとに取得。"""
+    if "N_HARAI" not in [r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")]:
+        return {}
+    cols = _cols(con, "N_HARAI")
+    if "PaySanrenpukuKumi1" not in cols:
+        return {}
+    out = {}
+    q = ("SELECT Year,JyoCD,Kaiji,Nichiji,RaceNum,"
+         "PaySanrenpukuKumi1,PaySanrenpukuPay1,PaySanrenpukuKumi2,PaySanrenpukuPay2,"
+         "PaySanrenpukuKumi3,PaySanrenpukuPay3 FROM N_HARAI WHERE Year=? AND MonthDay=?")
+    for row in con.execute(q, (y, md)):
+        rkey = "%s%s%s%s%s" % tuple(str(row[i]).strip() for i in range(5))
+        pays = []
+        for i in range(3):
+            kumi = _parse_kumi(row[5 + i * 2])
+            pay = _int(row[6 + i * 2])
+            if kumi and pay and pay > 0:
+                pays.append({"kumi": kumi, "pay": pay})
+        if pays:
+            out[rkey] = pays
+    return out
+
+
 def fetch(ecore, date_yyyymmdd, jra_only=True):
     y, md = date_yyyymmdd[:4], date_yyyymmdd[4:]
     con = _ro(ecore)
+    harai = load_sanrenpuku_payoffs(con, y, md)
 
     ur_cols = _cols(con, "N_UMA_RACE")
     if not ur_cols:
@@ -110,6 +144,7 @@ def fetch(ecore, date_yyyymmdd, jra_only=True):
         races_out.append({
             "rkey": rkey,
             "num_runners": syusso if syusso else sum(1 for x in horses if not x["scratched"]),
+            "sanrenpuku": harai.get(rkey, []),   # 三連複払戻 [{kumi:[a,b,c], pay:100円あたり}]
             "horses": horses,
         })
 
