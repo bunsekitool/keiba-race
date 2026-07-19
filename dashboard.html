@@ -65,6 +65,10 @@
   <h2><span class="ax">軸1</span>モデル本命の的中率</h2>
   <div class="sub" style="margin-top:-6px">本命＝各レースで pf_rank が1位の馬（取消・除外は除く）。</div>
   <div id="a1tiles" class="tiles"></div>
+  <div class="card" style="margin-top:12px">
+    <div style="font-size:13px;color:var(--muted);margin-bottom:9px">三連複ボックス — pf上位N頭を買ったとき、実際の1〜3着がその中に全部収まった割合</div>
+    <div id="trifecta"></div>
+  </div>
 
   <!-- 軸2 -->
   <h2><span class="ax">軸2</span>モデル vs 市場</h2>
@@ -147,6 +151,14 @@ function render(m){
     + tile('平均着順', a1.avg_finish==null?'—':a1.avg_finish.toFixed(2))
     + tile('本命の平均人気', a1.honmei_avg_market_rank==null?'—':a1.honmei_avg_market_rank.toFixed(2),'低いほど人気馬寄り')
     + tile('pf上位3の複勝圏率', pct(a1.top3_any_place_rate),'3頭中1頭でも圏内');
+
+  // 三連複ボックス
+  const tb=m.trifecta_box;
+  if(tb&&tb.by_topN){
+    document.getElementById('trifecta').innerHTML =
+      tb.by_topN.map(row=>barRow(`pf上位${row.topN}頭（${row.points}点）`, row.hit_rate, row.hit_rate, 'var(--seq-400)', `${pct(row.hit_rate)}<span class="muted" style="font-size:10px"> n=${row.n_races}</span>`)).join('')
+      + `<div class="muted" style="font-size:11px;margin-top:6px">${tb.note}</div>`;
+  }
 
   // 軸2
   const a2=m.axis2_vs_market;

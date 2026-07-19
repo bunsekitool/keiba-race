@@ -22,6 +22,29 @@
     "top2_any_place_rate": 0.6538461538461539,
     "top3_any_place_rate": 0.8076923076923077
   },
+  "trifecta_box": {
+    "by_topN": [
+      {
+        "topN": 3,
+        "points": 1,
+        "n_races": 27,
+        "hit_rate": 0.037037037037037035
+      },
+      {
+        "topN": 4,
+        "points": 4,
+        "n_races": 27,
+        "hit_rate": 0.18518518518518517
+      },
+      {
+        "topN": 5,
+        "points": 10,
+        "n_races": 26,
+        "hit_rate": 0.3076923076923077
+      }
+    ],
+    "note": "的中=1〜3着がpf上位N頭に全て含まれる。頭数>Nのレースのみ集計。回収率は三連複払戻が必要。"
+  },
   "axis2_vs_market": {
     "mean_rho_model": 0.3886475607399606,
     "mean_rho_market": 0.4819335359228762,
